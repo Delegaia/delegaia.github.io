@@ -196,3 +196,21 @@ footer nav, footer .fl { position: static; display: flex; gap: 18px; flex-wrap: 
 .legal { padding: 130px 0 60px; max-width: 780px }
 .legal h1 { font-size: 40px; margin-bottom: 10px } .legal h2 { font-size: 22px; margin: 34px 0 10px; max-width: none }
 .legal p, .legal li { color: var(--mute); margin-bottom: 10px } .legal ul { padding-left: 20px }
+
+/* Formulario de diagnóstico */
+.dform { max-width: 760px; margin: 36px auto 0; display: grid; gap: 16px; text-align: left }
+.frow { display: grid; grid-template-columns: 1fr 1fr; gap: 16px }
+.dform label { display: grid; gap: 7px; font-weight: 600; font-size: 14.5px }
+.dform label small { color: var(--dim); font-weight: 400 }
+.dform input, .dform select, .dform textarea { font: inherit; font-weight: 400; color: var(--fg); background: #0b0e1c;
+  border: 1px solid var(--line2); border-radius: 12px; padding: 12px 14px; width: 100%; outline: none; transition: border-color .2s, box-shadow .2s }
+.dform textarea { resize: vertical; min-height: 96px }
+.dform select { appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--mute) 50%), linear-gradient(135deg, var(--mute) 50%, transparent 50%);
+  background-position: calc(100% - 20px) 52%, calc(100% - 14px) 52%; background-size: 6px 6px; background-repeat: no-repeat; padding-right: 36px }
+.dform input:focus, .dform select:focus, .dform textarea:focus { border-color: var(--acc); box-shadow: 0 0 0 4px #5eead422 }
+.dform ::placeholder { color: var(--dim) }
+.dform .chk { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; color: var(--mute); font-size: 14px }
+.dform .chk input { width: 18px; height: 18px; margin-top: 2px; accent-color: var(--acc); flex: none }
+.dform .chk a, .dform .note a { color: var(--acc) }
+.dform button { justify-self: start; font-size: 17px; padding: 16px 26px }
+@media (max-width: 760px) { .frow { grid-template-columns: 1fr } .dform button { justify-self: stretch; justify-content: center } }
