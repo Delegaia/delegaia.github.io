@@ -269,8 +269,17 @@
         </div>
         <label class="chk"><input type="checkbox" required> He leído la <a href="/legal.html" target="_blank">política de privacidad</a> y acepto que Delegaia use estos datos para responder a mi solicitud.</label>
         <button class="btn btn-p" type="submit" id="dsend">Enviar y recibir mi diagnóstico →</button>
-        <div id="dfail" class="dfail" hidden>No hemos podido enviar el formulario por un problema técnico. No pierdas lo escrito:
-          <a class="btn btn-s" id="dmail" href="mailto:alejandro@delegaia.es">✉ Enviármelo por email</a></div>
+        <div id="dfail" class="dfail" hidden>
+          <b>No hemos podido enviar el formulario por un problema técnico.</b>
+          <span>No pierdas lo escrito: envíalo a <b>alejandro@delegaia.es</b> desde tu correo. Te dejamos el texto preparado.</span>
+          <textarea id="dtext" rows="6" readonly></textarea>
+          <div class="dfail-btns">
+            <button type="button" class="btn btn-s" id="dcopy">📋 Copiar texto</button>
+            <a class="btn btn-s" id="dgmail" href="#" target="_blank" rel="noopener">Abrir en Gmail</a>
+            <a class="btn btn-s" id="dmail" href="mailto:alejandro@delegaia.es">✉ Abrir mi correo</a>
+          </div>
+          <small id="derr" class="note"></small>
+        </div>
         <p class="note">Respuesta por email en 48 horas laborables. ¿Prefieres escribir directamente? <a href="mailto:alejandro@delegaia.es">alejandro@delegaia.es</a></p>
       </form>
     </div>

@@ -49,23 +49,34 @@ if ($('c-personas')) calc();
 
 document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());
 
-// Formulario de diagnóstico: envío con respaldo por email si el servicio falla
+// Formulario de diagnóstico: envío con respaldo si el servicio falla
 const form = document.getElementById('dform');
 if (form) form.addEventListener('submit', async e => {
   e.preventDefault();
   if (form.botcheck?.checked) return;
   const btn = document.getElementById('dsend'), fail = document.getElementById('dfail');
-  const data = Object.fromEntries(new FormData(form));
+  const fd = new FormData(form), data = Object.fromEntries(fd);
   btn.disabled = true; btn.textContent = 'Enviando…'; fail.hidden = true;
   try {
-    const r = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(data) });
+    // FormData = petición "simple" (sin preflight CORS), la más compatible
+    const r = await fetch(form.action, { method: 'POST', body: fd, headers: { Accept: 'application/json' } });
     const j = await r.json().catch(() => ({}));
-    if (!r.ok || j.success === false) throw new Error(j.message || r.status);
+    if (!r.ok || j.success === false) throw new Error(j.message || ('HTTP ' + r.status));
     location.href = '/gracias.html';
   } catch (err) {
-    const campos = ['Nombre', 'Empresa', 'email', 'Telefono', 'Sector', 'Tamano', 'Situacion', 'Objetivo', 'Herramientas', 'Urgencia'];
-    const cuerpo = campos.map(k => `${k}: ${data[k] || '-'}`).join('\n');
-    document.getElementById('dmail').href = 'mailto:alejandro@delegaia.es?subject=' + encodeURIComponent('Diagnóstico gratuito · ' + (data.Empresa || '')) + '&body=' + encodeURIComponent(cuerpo);
+    const campos = [['Nombre', 'Nombre'], ['Empresa', 'Empresa'], ['Email', 'email'], ['Teléfono', 'Telefono'], ['Sector', 'Sector'], ['Tamaño', 'Tamano'],
+      ['Situación', 'Situacion'], ['Objetivo', 'Objetivo'], ['Herramientas', 'Herramientas'], ['Urgencia', 'Urgencia']];
+    const cuerpo = campos.map(([l, k]) => `${l}: ${data[k] || '-'}`).join('\n');
+    const asunto = 'Diagnóstico gratuito · ' + (data.Empresa || '');
+    document.getElementById('dtext').value = cuerpo;
+    document.getElementById('dmail').href = 'mailto:alejandro@delegaia.es?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(cuerpo);
+    document.getElementById('dgmail').href = 'https://mail.google.com/mail/?view=cm&to=alejandro@delegaia.es&su=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(cuerpo);
+    document.getElementById('derr').textContent = 'Detalle técnico: ' + (err.message || err);
     fail.hidden = false; btn.disabled = false; btn.textContent = 'Reintentar envío →';
   }
+});
+document.getElementById('dcopy')?.addEventListener('click', async () => {
+  const t = document.getElementById('dtext'), b = document.getElementById('dcopy');
+  try { await navigator.clipboard.writeText(t.value); } catch { t.select(); document.execCommand('copy'); }
+  b.textContent = '✓ Copiado'; setTimeout(() => b.textContent = '📋 Copiar texto', 2000);
 });
