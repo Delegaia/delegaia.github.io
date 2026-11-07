@@ -48,3 +48,24 @@ function calc() {
 if ($('c-personas')) calc();
 
 document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());
+
+// Formulario de diagnóstico: envío con respaldo por email si el servicio falla
+const form = document.getElementById('dform');
+if (form) form.addEventListener('submit', async e => {
+  e.preventDefault();
+  if (form.botcheck?.checked) return;
+  const btn = document.getElementById('dsend'), fail = document.getElementById('dfail');
+  const data = Object.fromEntries(new FormData(form));
+  btn.disabled = true; btn.textContent = 'Enviando…'; fail.hidden = true;
+  try {
+    const r = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(data) });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok || j.success === false) throw new Error(j.message || r.status);
+    location.href = '/gracias.html';
+  } catch (err) {
+    const campos = ['Nombre', 'Empresa', 'email', 'Telefono', 'Sector', 'Tamano', 'Situacion', 'Objetivo', 'Herramientas', 'Urgencia'];
+    const cuerpo = campos.map(k => `${k}: ${data[k] || '-'}`).join('\n');
+    document.getElementById('dmail').href = 'mailto:alejandro@delegaia.es?subject=' + encodeURIComponent('Diagnóstico gratuito · ' + (data.Empresa || '')) + '&body=' + encodeURIComponent(cuerpo);
+    fail.hidden = false; btn.disabled = false; btn.textContent = 'Reintentar envío →';
+  }
+});
