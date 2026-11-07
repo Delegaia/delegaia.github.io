@@ -222,3 +222,6 @@ footer nav, footer .fl { position: static; display: flex; gap: 18px; flex-wrap: 
 .extra { padding: 20px 24px; border-radius: var(--r); border: 1px dashed #5eead466; background: #5eead408; display: grid; gap: 4px }
 .extra span { color: var(--mute); font-size: 15px } .extra span b { color: var(--fg) }
 @media (max-width: 760px) { .extras { grid-template-columns: 1fr } }
+.services.mk { grid-template-columns: repeat(4, 1fr) }
+@media (max-width: 1100px) { .services.mk { grid-template-columns: 1fr 1fr } }
+@media (max-width: 760px) { .services.mk { grid-template-columns: 1fr } }
