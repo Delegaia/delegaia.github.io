@@ -218,3 +218,7 @@ footer nav, footer .fl { position: static; display: flex; gap: 18px; flex-wrap: 
 .dfail[hidden] { display: none }
 .dfail textarea { width: 100%; font: 13px/1.5 ui-monospace, monospace; color: var(--fg); background: #0b0e1c; border: 1px solid var(--line2); border-radius: 10px; padding: 10px }
 .dfail-btns { display: flex; flex-wrap: wrap; gap: 8px } .dfail-btns .btn { padding: 10px 14px; font-size: 14px }
+.extras { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px }
+.extra { padding: 20px 24px; border-radius: var(--r); border: 1px dashed #5eead466; background: #5eead408; display: grid; gap: 4px }
+.extra span { color: var(--mute); font-size: 15px } .extra span b { color: var(--fg) }
+@media (max-width: 760px) { .extras { grid-template-columns: 1fr } }
