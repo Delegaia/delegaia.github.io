@@ -97,6 +97,8 @@ nav .wrap { display: flex; align-items: center; justify-content: space-between; 
 .svc li::before { content: "→ "; color: var(--acc) }
 .price { border-top: 1px solid var(--line); padding-top: 16px; font-size: 14px; color: var(--mute) }
 .price b { color: var(--fg); font-size: 20px; letter-spacing: -.02em }
+.price .ask { color: var(--acc); font-weight: 600; font-size: 15px; text-decoration: none }
+.price .ask:hover { text-decoration: underline }
 
 /* Calculadora */
 .calc { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 48px; border-radius: 24px; overflow: hidden;
