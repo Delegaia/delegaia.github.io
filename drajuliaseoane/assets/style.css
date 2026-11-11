@@ -88,16 +88,26 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:
   .hero-trust{justify-content:center}
 }
 
-/* Retrato recortado sobre arco */
-.portrait.cutout{isolation:isolate}
+/* Retrato recortado: solo ella, sin marco */
 .portrait.cutout::before{display:none}
-.portrait.cutout .arch{position:absolute;left:4%;right:4%;top:15%;bottom:0;z-index:1;border-radius:999px 999px 22px 22px;
-  background:radial-gradient(120% 80% at 50% 10%,#f7eee2 0%,#ead9c1 55%,#dcc3a1 100%);box-shadow:0 30px 60px -28px rgba(80,55,30,.45)}
-.portrait.cutout::after{content:"";position:absolute;left:calc(4% + 18px);right:calc(4% - 18px);top:calc(15% - 18px);bottom:18px;z-index:0;
-  border:1px solid var(--gold-soft);border-radius:999px 999px 26px 26px}
-.portrait.cutout img{position:relative;z-index:2;width:100%;height:auto;clip-path:inset(0 4% 0 4% round 0 0 22px 22px);
-  filter:drop-shadow(0 18px 24px rgba(80,55,30,.18))}
-.portrait.cutout .badge{z-index:3}
+.portrait.cutout img{position:relative;width:100%;height:auto;filter:drop-shadow(0 20px 30px rgba(80,55,30,.16))}
+.portrait.cutout .badge{z-index:2}
+/* En la portada la foto va grande y apoyada en el borde inferior de la cabecera */
+.hero.has-cutout{align-items:stretch;padding-bottom:0}
+.hero.has-cutout .wrap{width:100%;grid-template-columns:1fr 1.1fr;gap:30px}
+.hero.has-cutout .wrap > .reveal:first-child{align-self:center;padding-bottom:70px}
+.hero.has-cutout .portrait{align-self:end;justify-self:end;width:auto;max-width:100%}
+.hero.has-cutout .portrait img{width:auto;max-width:100%;max-height:max(520px,calc(100vh - 150px));margin-left:auto}
+.hero.has-cutout .badge{left:-10px;bottom:90px}
+@media(max-width:900px){
+  .hero.has-cutout .wrap{grid-template-columns:1fr;gap:20px}
+  .hero.has-cutout .portrait img{width:100%;max-height:none}
+  .hero.has-cutout .wrap > .reveal:first-child{padding-bottom:0}
+  .hero.has-cutout .portrait{order:2;justify-self:center;width:min(440px,96%)}
+  .hero.has-cutout .badge{left:50%;bottom:40px}
+}
+/* En "Sobre mí" la foto se difumina por abajo */
+.bio .portrait.cutout img{-webkit-mask-image:linear-gradient(to bottom,#000 78%,transparent);mask-image:linear-gradient(to bottom,#000 78%,transparent)}
 
 /* Garantías bajo los botones */
 .hero-trust{list-style:none;display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:30px;font-size:.78rem;letter-spacing:.05em;color:var(--ink-2)}
