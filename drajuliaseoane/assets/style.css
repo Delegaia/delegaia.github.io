@@ -338,3 +338,13 @@ footer{background:#221d1a;color:#a99b8d;padding:60px 0 30px;font-size:.85rem}
 .place-note{font-size:.8rem;color:var(--ink-2);margin:-8px 0 20px;line-height:1.6}
 .facts li span:last-child{line-height:1.5}
 .foot .brand p.reg{font-size:.72rem;opacity:.75;max-width:320px}
+/* Centros: Benalmádena (consulta principal) a todo el ancho y los otros tres debajo */
+.locs{grid-template-columns:repeat(3,1fr)}
+.loc-main{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:28px;text-align:left;padding:34px 40px}
+.loc-main svg{width:40px;height:40px;margin:0}
+.loc-main h3{font-size:2.3rem}
+.loc-main .loc-kicker{display:block;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.loc-main .loc-hours{margin-top:4px}
+.loc-main .more{margin-top:0;white-space:nowrap}
+@media(max-width:900px){.locs{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){.locs{grid-template-columns:1fr}.loc-main{grid-template-columns:1fr;text-align:center;justify-items:center;gap:10px;padding:32px 22px}.loc-main .more{margin-top:8px}}
