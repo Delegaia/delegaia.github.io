@@ -328,3 +328,13 @@ footer{background:#221d1a;color:#a99b8d;padding:60px 0 30px;font-size:.85rem}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
 .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+/* Centros: enlace a Google Maps (sin incrustar el mapa: así la web sigue sin cookies de terceros) */
+.map-link{border-radius:22px;border:1px solid var(--sand);background:var(--cream-2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:300px;padding:30px;text-align:center;color:var(--ink);transition:border-color .2s}
+.map-link:hover{border-color:var(--gold-soft)}
+.map-link svg{width:46px;height:46px;fill:none;stroke:var(--gold);stroke-width:1.4}
+.map-link strong{font-family:var(--serif);font-size:1.5rem;font-weight:500}
+.map-link span{color:var(--ink-2);font-size:.9rem}
+.map-link .btn{margin-top:12px;color:var(--ink)}
+.place-note{font-size:.8rem;color:var(--ink-2);margin:-8px 0 20px;line-height:1.6}
+.facts li span:last-child{line-height:1.5}
+.foot .brand p.reg{font-size:.72rem;opacity:.75;max-width:320px}
