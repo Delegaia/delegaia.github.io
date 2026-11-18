@@ -230,3 +230,40 @@ footer nav, footer .fl { position: static; display: flex; gap: 18px; flex-wrap: 
 .principles .pstep::before { content: none } .principles { margin-top: 36px }
 .principles .pstep { background: var(--card) }
 .founder { margin-top: 26px; color: var(--mute); font-size: 15px } .founder a { color: var(--acc); text-decoration: none }
+
+/* Páginas de servicios (/automatizacion/, /marketing/ y subpáginas) */
+.links a[aria-current="page"], .links a.on { color: var(--fg) }
+nav.crumbs { position: static; inset: auto; z-index: auto; border: 0; transition: none; margin-bottom: 22px }
+.crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; font-size: 13.5px; color: var(--dim) }
+.crumbs li + li::before { content: "/"; margin-right: 6px }
+.crumbs a { color: var(--mute); text-decoration: none } .crumbs a:hover { color: var(--fg) }
+.crumbs [aria-current] { color: var(--fg) }
+.phero { padding: 128px 0 48px; position: relative; overflow: hidden }
+.phero::before { content: ""; position: absolute; width: 900px; height: 900px; right: -320px; top: -420px; border-radius: 50%;
+  background: radial-gradient(circle, #818cf833, transparent 60%); pointer-events: none }
+.phero .wrap { position: relative; z-index: 1 }
+.phero h1 { font-size: clamp(34px, 5.4vw, 60px); font-weight: 800; letter-spacing: -.04em; max-width: 20ch; overflow-wrap: break-word }
+.phero .ctas { margin-top: 28px } .phero .trust { margin-top: 26px }
+.desde { margin-top: 18px; color: var(--mute); font-size: 15px } .desde b { color: var(--fg) }
+section.tight { padding: 64px 0 }
+.cards2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 36px }
+.box { padding: 24px 26px; border-radius: var(--r); background: var(--card); border: 1px solid var(--line) }
+.box h3 { font-size: 19px; margin-bottom: 8px } .box p { color: var(--mute); font-size: 15px }
+.box .checks { margin-top: 6px }
+a.svc { text-decoration: none; color: inherit }
+.svc .go { color: var(--acc); font-weight: 600; font-size: 15px }
+.svc h3 a { text-decoration: none } .svc h3 a:hover { color: var(--acc) }
+.services.mods { grid-template-columns: repeat(2, 1fr) } .services.mods.one { grid-template-columns: minmax(0, 720px) }
+.extras.one { grid-template-columns: 1fr }
+.local { margin-top: 24px; padding: 20px 24px; border-radius: var(--r); border: 1px solid var(--line2); background: #ffffff05; display: grid; gap: 4px }
+.local span { color: var(--mute); font-size: 15px }
+.back { margin-top: 28px } .back a, .more-link a { color: var(--acc); font-weight: 600; text-decoration: none } .back a:hover, .more-link a:hover { text-decoration: underline }
+.more-link { margin-top: 18px }
+.price.acts { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap }
+.price .ask2 { color: var(--mute); font-size: 14px; text-decoration: none } .price .ask2:hover { color: var(--fg) }
+.final .eyebrow { margin-bottom: 10px }
+@media (max-width: 980px) { .services.mods { grid-template-columns: 1fr } }
+@media (max-width: 760px) {
+  .cards2 { grid-template-columns: 1fr } .phero { padding: 108px 0 32px } section.tight { padding: 48px 0 }
+  .final { padding: 48px 20px }
+}

@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/assets/style.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"Delegaia","url":"https://delegaia.es",
+{"@context":"https://schema.org","@type":"ProfessionalService","@id":"https://delegaia.es/#empresa","name":"Delegaia","url":"https://delegaia.es",
 "logo":"https://delegaia.es/assets/img/logo.png","image":"https://delegaia.es/assets/img/og.png",
 "description":"IA y automatización para pymes: chatbots, automatización de procesos y ERP con IA.",
 "email":"alejandro@delegaia.es","telephone":"+34611084604",
@@ -35,17 +35,14 @@
 
 <nav>
   <div class="wrap">
-    <a class="logo" href="#"><img src="/assets/img/logo.png" alt="" width="32" height="32"><span>delega<span class="grad">ia</span></span></a>
-    <div class="links">
-      <a href="#servicios">Servicios</a>
-      <a href="#marketing">Marketing</a>
-      <a href="#calculadora">Calculadora</a>
-      <a href="#proceso">Cómo trabajamos</a>
-      <a href="#quienes-somos">Quiénes somos</a>
-      <a href="#faq">FAQ</a>
-      <a class="btn btn-p" href="#diagnostico">Diagnóstico gratis</a>
+    <a class="logo" href="/"><img src="/assets/img/logo.png" alt="" width="32" height="32"><span>delega<span class="grad">ia</span></span></a>
+    <div class="links" id="menu">
+      <a href="/" aria-current="page">Inicio</a>
+      <a href="/automatizacion/">IA y automatización</a>
+      <a href="/marketing/">Marketing</a>
+      <a class="btn btn-p" href="#diagnostico">Contacto</a>
     </div>
-    <button class="burger" aria-label="Abrir menú">☰</button>
+    <button class="burger" aria-label="Abrir menú" aria-controls="menu" aria-expanded="false">☰</button>
   </div>
 </nav>
 
@@ -97,36 +94,37 @@
     <h2 class="rv">Soluciones concretas, <span class="grad">presupuesto cerrado</span>.</h2>
     <p class="sub rv">Empezamos por lo que más horas te ahorra. Cada presupuesto se ajusta al tamaño de tu empresa y a lo que necesitas, sin facturas sorpresa.</p>
     <div class="services">
-      <article class="svc star rv"><span class="tag">El más pedido</span><div class="e">💬</div><h3>Asistente 24/7</h3>
+      <article class="svc star rv"><span class="tag">El más pedido</span><div class="e">💬</div><h3><a href="/automatizacion/chatbot-whatsapp/">Asistente 24/7</a></h3>
         <p>Un chatbot en tu web y WhatsApp entrenado con la información de tu negocio.</p>
         <ul><li>Responde, cualifica y agenda citas</li><li>Pasa a una persona cuando hace falta</li><li>Panel con todas las conversaciones</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
-      <article class="svc rv"><div class="e">⚙️</div><h3>Oficina automática</h3>
+        <div class="price acts"><a class="ask" href="/automatizacion/chatbot-whatsapp/">Ver el servicio →</a><a class="ask2" href="#diagnostico">Pedir presupuesto</a></div></article>
+      <article class="svc rv"><div class="e">⚙️</div><h3><a href="/automatizacion/oficina-automatica/">Oficina automática</a></h3>
         <p>De 3 a 5 automatizaciones que eliminan el trabajo administrativo repetitivo.</p>
         <ul><li>Alta de clientes y documentación</li><li>Recordatorios y seguimientos</li><li>Facturas e informes automáticos</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
-      <article class="svc rv"><div class="e">🧠</div><h3>Copiloto de IA</h3>
+        <div class="price acts"><a class="ask" href="/automatizacion/oficina-automatica/">Ver el servicio →</a><a class="ask2" href="#diagnostico">Pedir presupuesto</a></div></article>
+      <article class="svc rv"><div class="e">🧠</div><h3><a href="/automatizacion/copiloto-ia/">Copiloto de IA</a></h3>
         <p>Una IA privada que conoce tus documentos, plantillas y procedimientos.</p>
         <ul><li>Responde a tu equipo al momento</li><li>Redacta borradores con tu estilo</li><li>Tus datos no salen de tu control</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
-      <article class="svc rv"><div class="e">📊</div><h3>Tu ERP + IA</h3>
-        <p>Sacamos partido al ERP que ya usas (Odoo, Holded, Sage, A3 y otros) o te ayudamos a implantar uno.</p>
+        <div class="price acts"><a class="ask" href="/automatizacion/copiloto-ia/">Ver el servicio →</a><a class="ask2" href="#diagnostico">Pedir presupuesto</a></div></article>
+      <article class="svc rv"><div class="e">📊</div><h3><a href="/automatizacion/erp-ia/">Tu ERP + IA</a></h3>
+        <p>Sacamos partido al ERP que ya usas (Odoo, Holded, Sage, A3 y otros) o te ayudamos a <a href="/automatizacion/implantacion-odoo/" style="color:var(--acc)">implantar uno</a>.</p>
         <ul><li>Lectura automática de facturas</li><li>Informes que se envían solos</li><li>Asistente que consulta tu ERP</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
-      <article class="svc rv"><div class="e">🌐</div><h3>Webs que venden</h3>
+        <div class="price acts"><a class="ask" href="/automatizacion/erp-ia/">Ver el servicio →</a><a class="ask2" href="#diagnostico">Pedir presupuesto</a></div></article>
+      <article class="svc rv"><div class="e">🌐</div><h3><a href="/marketing/diseno-web/">Webs que venden</a></h3>
         <p>Webs rápidas, optimizadas para Google y con tu asistente integrado.</p>
         <ul><li>Diseño a medida y adaptado al móvil</li><li>SEO técnico desde el primer día</li><li>Captación de contactos automatizada</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
+        <div class="price acts"><a class="ask" href="/marketing/diseno-web/">Ver el servicio →</a><a class="ask2" href="#diagnostico">Pedir presupuesto</a></div></article>
       <article class="svc rv"><div class="e">🧩</div><h3>Apps y portales a medida</h3>
         <p>Herramientas propias para tu empresa cuando el software estándar no llega.</p>
         <ul><li>Portal de clientes y documentos</li><li>Paneles internos con tus datos</li><li>Prototipo antes de programar</li></ul>
         <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
     </div>
     <div class="extras rv">
-      <div class="extra"><b>¿Eres autónomo o un negocio pequeño?</b><span>Asistente Esencial para WhatsApp: responde a tus clientes, informa de tus servicios y agenda citas por ti. Ideal para barberías, peluquerías, estética, fisios y talleres.</span></div>
-      <div class="extra"><b>¿Prefieres empezar pequeño?</b><span>Automatización Express: <b>un flujo automático</b>, listo en una semana. Si después amplías, se descuenta.</span></div>
+      <div class="extra"><b><a href="/automatizacion/chatbot-whatsapp/" style="text-decoration:none">¿Eres autónomo o un negocio pequeño? →</a></b><span>Asistente Esencial para WhatsApp: responde a tus clientes, informa de tus servicios y agenda citas por ti. Ideal para barberías, peluquerías, estética, fisios y talleres.</span></div>
+      <div class="extra"><b><a href="/automatizacion/oficina-automatica/" style="text-decoration:none">¿Prefieres empezar pequeño? →</a></b><span>Automatización Express: <b>un flujo automático</b>, listo en una semana. Si después amplías, se descuenta.</span></div>
       <div class="extra"><b>Pack Completo</b><span>Asistente 24/7 + Oficina Automática + web nueva, en un solo proyecto y con mejor precio que por separado.</span></div>
     </div>
+    <p class="more-link rv"><a href="/automatizacion/">Ver todos los servicios de IA y automatización →</a></p>
     <p class="note">Te enviamos el presupuesto por escrito y sin compromiso, con lo que incluye cada cuota: alojamiento, uso de la IA, mantenimiento y soporte.</p>
   </div>
 </section>
@@ -138,23 +136,24 @@
     <h2 class="rv">Marketing que trabaja <span class="grad">cada mes</span>.</h2>
     <p class="sub rv">El mismo sistema de IA con el que creamos contenido, aplicado a tu marca. Tú apruebas en minutos; nosotros hacemos el resto.</p>
     <div class="services mk">
-      <article class="svc rv"><div class="e">💼</div><h3>Marca personal en LinkedIn</h3>
+      <article class="svc rv"><div class="e">💼</div><h3><a href="/marketing/linkedin/">Marca personal en LinkedIn</a></h3>
         <p>Contenido con tu voz para generar confianza y clientes.</p>
         <ul><li>12 posts y 2 carruseles al mes</li><li>Perfil optimizado</li><li>Apruebas en 10 minutos a la semana</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
-      <article class="svc rv"><div class="e">🔎</div><h3>Contenido SEO</h3>
+        <div class="price acts"><a class="ask" href="/marketing/linkedin/">Ver el servicio →</a><a class="ask2" href="#diagnostico">Pedir presupuesto</a></div></article>
+      <article class="svc rv"><div class="e">🔎</div><h3><a href="/marketing/seo/">Contenido SEO</a></h3>
         <p>Que te encuentren en Google por lo que haces y dónde lo haces.</p>
         <ul><li>4 artículos optimizados al mes</li><li>Mejoras técnicas de la web</li><li>Informe de posiciones</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
-      <article class="svc rv"><div class="e">📬</div><h3>Email marketing</h3>
+        <div class="price acts"><a class="ask" href="/marketing/seo/">Ver el servicio →</a><a class="ask2" href="#diagnostico">Pedir presupuesto</a></div></article>
+      <article class="svc rv"><div class="e">📬</div><h3><a href="/marketing/email-marketing/">Email marketing</a></h3>
         <p>Mantén el contacto con tus clientes y convierte presupuestos en ventas.</p>
         <ul><li>Newsletter mensual</li><li>Secuencia automática de seguimiento</li><li>Cumplimiento RGPD</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
-      <article class="svc rv"><div class="e">🎯</div><h3>Prospección en LinkedIn</h3>
+        <div class="price acts"><a class="ask" href="/marketing/email-marketing/">Ver el servicio →</a><a class="ask2" href="#diagnostico">Pedir presupuesto</a></div></article>
+      <article class="svc rv"><div class="e">🎯</div><h3><a href="/marketing/prospeccion-b2b/">Prospección en LinkedIn</a></h3>
         <p>Conversaciones con tu cliente ideal, con mensajes que envías tú desde tu perfil.</p>
         <ul><li>100-150 empresas y decisores al mes</li><li>Mensajes personalizados uno a uno</li><li>Seguimiento y argumentario</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
+        <div class="price acts"><a class="ask" href="/marketing/prospeccion-b2b/">Ver el servicio →</a><a class="ask2" href="#diagnostico">Pedir presupuesto</a></div></article>
     </div>
+    <p class="more-link rv"><a href="/marketing/">Ver todos los servicios de marketing →</a></p>
   </div>
 </section>
 
@@ -326,8 +325,12 @@
 
 <footer>
   <div class="wrap">
-    <div><a class="logo" href="#" style="font-size:18px"><img src="/assets/img/logo.png" alt="" width="26" height="26"><span>delega<span class="grad">ia</span></span></a>
+    <div><a class="logo" href="/" style="font-size:18px"><img src="/assets/img/logo.png" alt="" width="26" height="26"><span>delega<span class="grad">ia</span></span></a>
       <p style="margin-top:10px">IA y automatización para pymes · Málaga, España</p></div>
+    <div class="fl">
+      <a href="/automatizacion/">IA y automatización</a>
+      <a href="/marketing/">Marketing</a>
+    </div>
     <div class="fl">
       <a href="tel:+34611084604">+34 611 08 46 04</a>
       <a href="mailto:alejandro@delegaia.es">alejandro@delegaia.es</a>

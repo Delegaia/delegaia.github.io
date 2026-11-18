@@ -3,8 +3,8 @@ const nav = document.querySelector('nav');
 const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 10);
 addEventListener('scroll', onScroll, { passive: true }); onScroll();
 const burger = document.querySelector('.burger'), links = document.querySelector('.links');
-burger?.addEventListener('click', () => links.classList.toggle('open'));
-links?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+burger?.addEventListener('click', () => { const o = links.classList.toggle('open'); burger.setAttribute('aria-expanded', o); });
+links?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { links.classList.remove('open'); burger?.setAttribute('aria-expanded', 'false'); }));
 
 // Aparición al hacer scroll
 const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
