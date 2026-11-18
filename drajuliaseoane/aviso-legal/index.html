@@ -5,21 +5,58 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aviso legal · Dra. Julia Seoane</title>
 <meta name="description" content="Aviso legal del sitio web de la Dra. Julia Seoane.">
-<!-- FASE DE PRUEBAS: quitar esta línea cuando la web pase a su dominio definitivo -->
+<!-- FASE DE PRUEBAS: el valor sale de build.js (const DEMO). Con DEMO = true todas las páginas llevan "noindex, nofollow".
+     Al pasar al dominio definitivo: DEMO = false → "index, follow" (y "noindex, follow" en aviso legal, privacidad y cookies) -->
 <meta name="robots" content="noindex, nofollow">
+<!-- Canonical con el dominio previsto (drajuliaseoane.es, aún sin registrar). Base en build.js (const BASE) -->
+<link rel="canonical" href="https://drajuliaseoane.es/aviso-legal/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <!-- Vista previa al compartir el enlace (WhatsApp, redes). Cambiar la URL cuando tenga dominio propio -->
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Dra. Julia Seoane">
+<meta property="og:url" content="https://drajuliaseoane.es/aviso-legal/">
 <meta property="og:locale" content="es_ES">
 <meta property="og:title" content="Aviso legal · Dra. Julia Seoane">
 <meta property="og:description" content="Aviso legal del sitio web de la Dra. Julia Seoane.">
 <meta property="og:image" content="https://delegaia.es/drajuliaseoane/img/compartir.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../assets/style.css?v=ae52b17c">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://drajuliaseoane.es/#web",
+   "name": "Dra. Julia Seoane",
+   "url": "https://drajuliaseoane.es/",
+   "inLanguage": "es-ES"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://drajuliaseoane.es/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Aviso legal",
+     "item": "https://drajuliaseoane.es/aviso-legal/"
+    }
+   ]
+  }
+ ]
+}
+</script>
 </head>
 <body>
 
@@ -86,7 +123,7 @@
     <div class="foot">
       <div class="brand">
         <a href="../" class="logo"><span class="mono">JS</span><span>Dra. Julia Seoane</span></a>
-        <p>Medicina estética con resultados naturales en Benalmádena, Fuengirola, Marbella y Melilla.</p>
+        <p>Medicina estética con valoración médica previa. Consulta propia en Benalmádena Costa; también en Fuengirola, Marbella y Melilla.</p>
         <p class="reg">Dra. Julia Seoane · Médica, col. n.º 292907834 (Málaga).<br>Consulta principal: Clínica Dental Azuaga, Benalmádena · NICA 36920 (U.48 Medicina Estética).</p>
       </div>
       <div>

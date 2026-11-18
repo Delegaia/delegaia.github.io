@@ -3,23 +3,225 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contacto y citas · Dra. Julia Seoane · Medicina estética</title>
-<meta name="description" content="Pide cita con la Dra. Julia Seoane por WhatsApp o teléfono en el 679 452 522. Consultas en Fuengirola, Marbella, Benalmádena y Melilla.">
-<!-- FASE DE PRUEBAS: quitar esta línea cuando la web pase a su dominio definitivo -->
+<title>Pedir cita con la Dra. Julia Seoane · Medicina estética</title>
+<meta name="description" content="Pide tu valoración por WhatsApp o teléfono (679 452 522). Consulta en Benalmádena Costa: mar y mié 13-20 h, vie 16-19 h. English spoken.">
+<!-- FASE DE PRUEBAS: el valor sale de build.js (const DEMO). Con DEMO = true todas las páginas llevan "noindex, nofollow".
+     Al pasar al dominio definitivo: DEMO = false → "index, follow" (y "noindex, follow" en aviso legal, privacidad y cookies) -->
 <meta name="robots" content="noindex, nofollow">
+<!-- Canonical con el dominio previsto (drajuliaseoane.es, aún sin registrar). Base en build.js (const BASE) -->
+<link rel="canonical" href="https://drajuliaseoane.es/contacto/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <!-- Vista previa al compartir el enlace (WhatsApp, redes). Cambiar la URL cuando tenga dominio propio -->
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Dra. Julia Seoane">
+<meta property="og:url" content="https://drajuliaseoane.es/contacto/">
 <meta property="og:locale" content="es_ES">
-<meta property="og:title" content="Contacto y citas · Dra. Julia Seoane · Medicina estética">
-<meta property="og:description" content="Pide cita con la Dra. Julia Seoane por WhatsApp o teléfono en el 679 452 522. Consultas en Fuengirola, Marbella, Benalmádena y Melilla.">
+<meta property="og:title" content="Pedir cita con la Dra. Julia Seoane · Medicina estética">
+<meta property="og:description" content="Pide tu valoración por WhatsApp o teléfono (679 452 522). Consulta en Benalmádena Costa: mar y mié 13-20 h, vie 16-19 h. English spoken.">
 <meta property="og:image" content="https://delegaia.es/drajuliaseoane/img/compartir.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../assets/style.css?v=ae52b17c">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://drajuliaseoane.es/#web",
+   "name": "Dra. Julia Seoane",
+   "url": "https://drajuliaseoane.es/",
+   "inLanguage": "es-ES"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://drajuliaseoane.es/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Contacto",
+     "item": "https://drajuliaseoane.es/contacto/"
+    }
+   ]
+  },
+  {
+   "@type": "ContactPage",
+   "@id": "https://drajuliaseoane.es/contacto/#pagina",
+   "url": "https://drajuliaseoane.es/contacto/",
+   "name": "Pedir cita con la Dra. Julia Seoane · Medicina estética",
+   "about": {
+    "@id": "https://drajuliaseoane.es/#dra-julia-seoane"
+   },
+   "isPartOf": {
+    "@id": "https://drajuliaseoane.es/#web"
+   }
+  },
+  {
+   "@type": "IndividualPhysician",
+   "@id": "https://drajuliaseoane.es/#dra-julia-seoane",
+   "name": "Dra. Julia Seoane",
+   "description": "Médica colegiada en Málaga con máster en Medicina Estética (Universidad de Málaga). Consulta en Benalmádena Costa y en Fuengirola, Marbella y Melilla.",
+   "url": "https://drajuliaseoane.es/",
+   "image": "https://drajuliaseoane.es/img/julia-seoane.jpg",
+   "telephone": "+34679452522",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Avda. Antonio Machado (Urb. Los Porches, local 56)",
+    "postalCode": "29630",
+    "addressLocality": "Benalmádena Costa",
+    "addressRegion": "Málaga",
+    "addressCountry": "ES"
+   },
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "Número de colegiada (Colegio Oficial de Médicos de Málaga)",
+    "value": "292907834"
+   },
+   "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Máster",
+    "name": "Máster en Medicina Estética",
+    "recognizedBy": {
+     "@type": "CollegeOrUniversity",
+     "name": "Universidad de Málaga"
+    }
+   },
+   "memberOf": [
+    {
+     "@type": "Organization",
+     "name": "Sociedad Española de Medicina Estética (SEME)"
+    }
+   ],
+   "knowsLanguage": [
+    "es",
+    "en"
+   ],
+   "sameAs": [
+    "https://www.instagram.com/drajuliaseoane/"
+   ],
+   "practicesAt": [
+    {
+     "@id": "https://drajuliaseoane.es/centros/benalmadena/#consulta"
+    },
+    {
+     "@type": "MedicalClinic",
+     "name": "Clínicas Estéticas Monet",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Alcalde Clemente Díaz Ruiz, 8",
+      "postalCode": "29640",
+      "addressLocality": "Fuengirola",
+      "addressRegion": "Málaga",
+      "addressCountry": "ES"
+     },
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "NICA (Registro de centros sanitarios de Andalucía)",
+      "value": "53776"
+     }
+    },
+    {
+     "@type": "MedicalClinic",
+     "name": "Clínicas Estéticas Monet Elviria",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C.C. Pinares de Elviria, local 19",
+      "postalCode": "29604",
+      "addressLocality": "Marbella",
+      "addressRegion": "Málaga",
+      "addressCountry": "ES"
+     },
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "NICA (Registro de centros sanitarios de Andalucía)",
+      "value": "50988"
+     }
+    },
+    {
+     "@type": "MedicalClinic",
+     "name": "Clínica Innova",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C/ Carlos V, 40",
+      "postalCode": "52006",
+      "addressLocality": "Melilla",
+      "addressRegion": "Melilla",
+      "addressCountry": "ES"
+     }
+    }
+   ]
+  },
+  {
+   "@type": "MedicalClinic",
+   "@id": "https://drajuliaseoane.es/centros/benalmadena/#consulta",
+   "name": "Dra. Julia Seoane · Medicina estética Benalmádena",
+   "url": "https://drajuliaseoane.es/centros/benalmadena/",
+   "telephone": "+34679452522",
+   "image": "https://drajuliaseoane.es/img/compartir.jpg",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Avda. Antonio Machado (Urb. Los Porches, local 56)",
+    "postalCode": "29630",
+    "addressLocality": "Benalmádena Costa",
+    "addressRegion": "Málaga",
+    "addressCountry": "ES"
+   },
+   "containedInPlace": {
+    "@type": "Place",
+    "name": "Clínica Dental Azuaga"
+   },
+   "identifier": [
+    {
+     "@type": "PropertyValue",
+     "propertyID": "NICA (Registro de centros sanitarios de Andalucía)",
+     "value": "36920"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "Unidad asistencial",
+     "value": "U.48 Medicina Estética"
+    }
+   ],
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Tuesday",
+      "Wednesday"
+     ],
+     "opens": "13:00",
+     "closes": "20:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "Friday",
+     "opens": "16:00",
+     "closes": "19:00"
+    }
+   ],
+   "availableLanguage": [
+    "es",
+    "en"
+   ],
+   "isAcceptingNewPatients": true,
+   "hasMap": "https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica%20Dental%20Azuaga%2C%20Avda.%20Antonio%20Machado%2C%20Los%20Porches%2C%2029630%20Benalm%C3%A1dena",
+   "founder": {
+    "@id": "https://drajuliaseoane.es/#dra-julia-seoane"
+   }
+  }
+ ]
+}
+</script>
 </head>
 <body>
 
@@ -46,10 +248,10 @@
 <header class="page-hero center">
   <div class="wrap">
     <div class="crumbs"><a href="../">Inicio</a><span>/</span>Contacto</div>
-    <span class="eyebrow">Contacto</span>
-    <h1>Hablemos</h1>
+    <span class="eyebrow">Contacto · Hablemos</span>
+    <h1>Pide cita con la Dra. Julia Seoane</h1>
     <span class="script">Tu primera valoración empieza aquí</span>
-    <p class="lead">Escríbeme por WhatsApp, llámame, mándame un correo o un mensaje por Instagram. Te respondo y te doy cita en el centro que mejor te venga. Atiendo en español y en inglés.</p>
+    <p class="lead">Escríbeme por WhatsApp, llámame, mándame un correo o un mensaje por Instagram. Te respondo y te doy cita en Benalmádena o en el centro que te quede más cerca, dentro de su horario. Atiendo en español y en inglés.</p>
   </div>
 </header>
 
@@ -100,7 +302,7 @@
     <div class="foot">
       <div class="brand">
         <a href="../" class="logo"><span class="mono">JS</span><span>Dra. Julia Seoane</span></a>
-        <p>Medicina estética con resultados naturales en Benalmádena, Fuengirola, Marbella y Melilla.</p>
+        <p>Medicina estética con valoración médica previa. Consulta propia en Benalmádena Costa; también en Fuengirola, Marbella y Melilla.</p>
         <p class="reg">Dra. Julia Seoane · Médica, col. n.º 292907834 (Málaga).<br>Consulta principal: Clínica Dental Azuaga, Benalmádena · NICA 36920 (U.48 Medicina Estética).</p>
       </div>
       <div>

@@ -3,23 +3,196 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dra. Julia Seoane · Medicina estética en Benalmádena, Fuengirola, Marbella y Melilla</title>
-<meta name="description" content="Medicina estética con resultados naturales. Ácido hialurónico, bioestimuladores, hilos tensores y armonización facial con la Dra. Julia Seoane.">
-<!-- FASE DE PRUEBAS: quitar esta línea cuando la web pase a su dominio definitivo -->
+<title>Dra. Julia Seoane · Medicina estética en la Costa del Sol</title>
+<meta name="description" content="Médica colegiada con máster en Medicina Estética (UMA). Consulta en Benalmádena y en Fuengirola, Marbella y Melilla. English spoken.">
+<!-- FASE DE PRUEBAS: el valor sale de build.js (const DEMO). Con DEMO = true todas las páginas llevan "noindex, nofollow".
+     Al pasar al dominio definitivo: DEMO = false → "index, follow" (y "noindex, follow" en aviso legal, privacidad y cookies) -->
 <meta name="robots" content="noindex, nofollow">
+<!-- Canonical con el dominio previsto (drajuliaseoane.es, aún sin registrar). Base en build.js (const BASE) -->
+<link rel="canonical" href="https://drajuliaseoane.es/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
 <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
 <!-- Vista previa al compartir el enlace (WhatsApp, redes). Cambiar la URL cuando tenga dominio propio -->
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Dra. Julia Seoane">
+<meta property="og:url" content="https://drajuliaseoane.es/">
 <meta property="og:locale" content="es_ES">
-<meta property="og:title" content="Dra. Julia Seoane · Medicina estética en Benalmádena, Fuengirola, Marbella y Melilla">
-<meta property="og:description" content="Medicina estética con resultados naturales. Ácido hialurónico, bioestimuladores, hilos tensores y armonización facial con la Dra. Julia Seoane.">
+<meta property="og:title" content="Dra. Julia Seoane · Medicina estética en la Costa del Sol">
+<meta property="og:description" content="Médica colegiada con máster en Medicina Estética (UMA). Consulta en Benalmádena y en Fuengirola, Marbella y Melilla. English spoken.">
 <meta property="og:image" content="https://delegaia.es/drajuliaseoane/img/compartir.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="./assets/style.css?v=ae52b17c">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://drajuliaseoane.es/#web",
+   "name": "Dra. Julia Seoane",
+   "url": "https://drajuliaseoane.es/",
+   "inLanguage": "es-ES"
+  },
+  {
+   "@type": "IndividualPhysician",
+   "@id": "https://drajuliaseoane.es/#dra-julia-seoane",
+   "name": "Dra. Julia Seoane",
+   "description": "Médica colegiada en Málaga con máster en Medicina Estética (Universidad de Málaga). Consulta en Benalmádena Costa y en Fuengirola, Marbella y Melilla.",
+   "url": "https://drajuliaseoane.es/",
+   "image": "https://drajuliaseoane.es/img/julia-seoane.jpg",
+   "telephone": "+34679452522",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Avda. Antonio Machado (Urb. Los Porches, local 56)",
+    "postalCode": "29630",
+    "addressLocality": "Benalmádena Costa",
+    "addressRegion": "Málaga",
+    "addressCountry": "ES"
+   },
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "Número de colegiada (Colegio Oficial de Médicos de Málaga)",
+    "value": "292907834"
+   },
+   "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Máster",
+    "name": "Máster en Medicina Estética",
+    "recognizedBy": {
+     "@type": "CollegeOrUniversity",
+     "name": "Universidad de Málaga"
+    }
+   },
+   "memberOf": [
+    {
+     "@type": "Organization",
+     "name": "Sociedad Española de Medicina Estética (SEME)"
+    }
+   ],
+   "knowsLanguage": [
+    "es",
+    "en"
+   ],
+   "sameAs": [
+    "https://www.instagram.com/drajuliaseoane/"
+   ],
+   "practicesAt": [
+    {
+     "@id": "https://drajuliaseoane.es/centros/benalmadena/#consulta"
+    },
+    {
+     "@type": "MedicalClinic",
+     "name": "Clínicas Estéticas Monet",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Alcalde Clemente Díaz Ruiz, 8",
+      "postalCode": "29640",
+      "addressLocality": "Fuengirola",
+      "addressRegion": "Málaga",
+      "addressCountry": "ES"
+     },
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "NICA (Registro de centros sanitarios de Andalucía)",
+      "value": "53776"
+     }
+    },
+    {
+     "@type": "MedicalClinic",
+     "name": "Clínicas Estéticas Monet Elviria",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C.C. Pinares de Elviria, local 19",
+      "postalCode": "29604",
+      "addressLocality": "Marbella",
+      "addressRegion": "Málaga",
+      "addressCountry": "ES"
+     },
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "NICA (Registro de centros sanitarios de Andalucía)",
+      "value": "50988"
+     }
+    },
+    {
+     "@type": "MedicalClinic",
+     "name": "Clínica Innova",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C/ Carlos V, 40",
+      "postalCode": "52006",
+      "addressLocality": "Melilla",
+      "addressRegion": "Melilla",
+      "addressCountry": "ES"
+     }
+    }
+   ]
+  },
+  {
+   "@type": "MedicalClinic",
+   "@id": "https://drajuliaseoane.es/centros/benalmadena/#consulta",
+   "name": "Dra. Julia Seoane · Medicina estética Benalmádena",
+   "url": "https://drajuliaseoane.es/centros/benalmadena/",
+   "telephone": "+34679452522",
+   "image": "https://drajuliaseoane.es/img/compartir.jpg",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Avda. Antonio Machado (Urb. Los Porches, local 56)",
+    "postalCode": "29630",
+    "addressLocality": "Benalmádena Costa",
+    "addressRegion": "Málaga",
+    "addressCountry": "ES"
+   },
+   "containedInPlace": {
+    "@type": "Place",
+    "name": "Clínica Dental Azuaga"
+   },
+   "identifier": [
+    {
+     "@type": "PropertyValue",
+     "propertyID": "NICA (Registro de centros sanitarios de Andalucía)",
+     "value": "36920"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "Unidad asistencial",
+     "value": "U.48 Medicina Estética"
+    }
+   ],
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Tuesday",
+      "Wednesday"
+     ],
+     "opens": "13:00",
+     "closes": "20:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "Friday",
+     "opens": "16:00",
+     "closes": "19:00"
+    }
+   ],
+   "availableLanguage": [
+    "es",
+    "en"
+   ],
+   "isAcceptingNewPatients": true,
+   "hasMap": "https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica%20Dental%20Azuaga%2C%20Avda.%20Antonio%20Machado%2C%20Los%20Porches%2C%2029630%20Benalm%C3%A1dena",
+   "founder": {
+    "@id": "https://drajuliaseoane.es/#dra-julia-seoane"
+   }
+  }
+ ]
+}
+</script>
 </head>
 <body>
 
@@ -46,10 +219,9 @@
 <header class="hero has-cutout" id="inicio">
   <div class="wrap">
     <div class="reveal">
-      <span class="eyebrow">Medicina estética</span>
-      <h1>Dra. Julia Seoane</h1>
+      <h1><span class="eyebrow" style="display:block;margin-bottom:14px">Medicina estética en la Costa del Sol</span>Dra. Julia Seoane</h1>
       <span class="script">Realza tu belleza, cuida tu piel</span>
-      <p class="lead">Tratamientos médicos personalizados para que te veas como tú, pero en tu mejor versión. Belleza natural, resultados armónicos y la seguridad de estar en manos médicas.</p>
+      <p class="lead">Tratamientos médicos personalizados, con valoración previa y un plan a tu medida. Buscamos la naturalidad y la armonía, con la seguridad de estar en manos médicas.</p>
       <div class="hero-ctas">
         <a class="btn btn-gold" href="https://wa.me/34679452522?text=Hola%20Dra.%20Seoane%2C%20me%20gustar%C3%ADa%20pedir%20cita" target="_blank" rel="noopener">Pedir cita</a>
         <a class="btn btn-line" href="./tratamientos/">Ver tratamientos</a>
@@ -72,7 +244,7 @@
   <div class="wrap">
     <div class="value">
       <svg viewBox="0 0 40 40"><path d="M20 30c-5-4-6-10-0-18 6 8 5 14 0 18Z"/><path d="M20 30c-7 0-12-4-13-11 7 0 11 4 13 11Z"/><path d="M20 30c7 0 12-4 13-11-7 0-11 4-13 11Z"/></svg>
-      <h3>Resultados naturales</h3>
+      <h3>Naturalidad</h3>
     </div>
     <div class="value">
       <svg viewBox="0 0 40 40"><path d="M20 5 32 10v9c0 8-5 13-12 16C13 32 8 27 8 19v-9Z"/><path d="m14 20 4 4 8-8"/></svg>
@@ -119,49 +291,49 @@
         <span class="num">01</span>
         <h3>Armonización facial</h3>
         <p class="tag">Un plan global para tu rostro</p>
-        <p>Equilibra y define tus rasgos combinando técnicas, con un resultado natural.</p>
+        <p>Estudia el rostro en conjunto y combina técnicas según tu caso.</p>
         <span class="more">Ver tratamiento →</span>
       </a>
       <a class="card reveal" href="./tratamientos/acido-hialuronico/">
         <span class="num">02</span>
         <h3>Ácido hialurónico</h3>
-        <p class="tag">Recupera el volumen y define tus rasgos</p>
+        <p class="tag">Volumen y definición de rasgos</p>
         <ul><li>Labios</li><li>Pómulos</li><li>Ojeras</li><li>Mentón</li><li>Mandíbula</li></ul>
         <span class="more">Ver tratamiento →</span>
       </a>
       <a class="card reveal" href="./tratamientos/bioestimuladores/">
         <span class="num">03</span>
         <h3>Bioestimuladores del colágeno</h3>
-        <p class="tag">Mejora la calidad de tu piel y combate la flacidez</p>
+        <p class="tag">Calidad de piel y flacidez</p>
         <ul><li>Rostro</li><li>Cuello y escote</li><li>Manos</li><li>Corporal</li></ul>
         <span class="more">Ver tratamiento →</span>
       </a>
       <a class="card reveal" href="./tratamientos/hilos-tensores/">
         <span class="num">04</span>
         <h3>Hilos tensores</h3>
-        <p class="tag">Efecto lifting natural</p>
-        <p>Para una piel más firme y un óvalo facial redefinido, sin cirugía.</p>
+        <p class="tag">Flacidez leve o moderada, sin cortes</p>
+        <p>Para la flacidez leve o moderada del óvalo facial y el cuello, sin cortes.</p>
         <span class="more">Ver tratamiento →</span>
       </a>
       <a class="card reveal" href="./tratamientos/skin-boosters-mesoterapia/">
         <span class="num">05</span>
         <h3>Skin boosters y mesoterapia</h3>
         <p class="tag">Hidratación profunda y luminosidad</p>
-        <p>Devuelve a tu piel la jugosidad y el brillo de una piel sana.</p>
+        <p>Para la piel apagada o deshidratada.</p>
         <span class="more">Ver tratamiento →</span>
       </a>
       <a class="card reveal" href="./tratamientos/peelings-medicos/">
         <span class="num">06</span>
         <h3>Peelings médicos</h3>
         <p class="tag">Renueva tu piel</p>
-        <p>Mejora la textura y reduce manchas para una piel más uniforme.</p>
+        <p>Para manchas, marcas de acné y textura irregular.</p>
         <span class="more">Ver tratamiento →</span>
       </a>
       <a class="card reveal" href="./tratamientos/tratamientos-corporales/">
         <span class="num">07</span>
         <h3>Tratamientos corporales</h3>
-        <p class="tag">Reafirma y moldea</p>
-        <p>Reafirma la piel y mejora la celulitis con bioestimuladores y mesoterapia.</p>
+        <p class="tag">Flacidez y aspecto de la celulitis</p>
+        <p>Bioestimuladores y mesoterapia para la flacidez y el aspecto de la celulitis.</p>
         <span class="more">Ver tratamiento →</span>
       </a>
       <a class="card reveal" href="./tratamientos/">
@@ -240,7 +412,7 @@
     <div class="foot">
       <div class="brand">
         <a href="./" class="logo"><span class="mono">JS</span><span>Dra. Julia Seoane</span></a>
-        <p>Medicina estética con resultados naturales en Benalmádena, Fuengirola, Marbella y Melilla.</p>
+        <p>Medicina estética con valoración médica previa. Consulta propia en Benalmádena Costa; también en Fuengirola, Marbella y Melilla.</p>
         <p class="reg">Dra. Julia Seoane · Médica, col. n.º 292907834 (Málaga).<br>Consulta principal: Clínica Dental Azuaga, Benalmádena · NICA 36920 (U.48 Medicina Estética).</p>
       </div>
       <div>
