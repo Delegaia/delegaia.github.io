@@ -12,7 +12,7 @@
 <link rel="canonical" href="https://delegaia.es/">
 <link rel="icon" href="/assets/img/logo.png">
 <link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
-<meta name="theme-color" content="#0b0e1c">
+<meta name="theme-color" content="#05070d">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="Delegaia">
@@ -38,15 +38,15 @@
 
 <nav>
   <div class="wrap">
-    <a class="logo" href="#"><img src="/assets/img/logo.png" alt="" width="32" height="32"><span>delega<span class="grad">ia</span></span></a>
+    <a class="logo" href="#"><img src="/assets/img/logo.png" alt="" width="30" height="30"><span>delegaia</span></a>
     <div class="links">
       <a href="#servicios">Servicios</a>
-      <a href="#marketing">Marketing</a>
+      <a href="#empezar">Cómo empezar</a>
       <a href="#calculadora">Calculadora</a>
-      <a href="#proceso">Cómo trabajamos</a>
+      <a href="#proceso">Proceso</a>
       <a href="#quienes-somos">Quiénes somos</a>
       <a href="#faq">FAQ</a>
-      <a class="btn btn-p" href="#diagnostico">Diagnóstico gratis</a>
+      <a class="btn btn-p btn-sm" href="#diagnostico">Diagnóstico gratis</a>
     </div>
     <button class="burger" aria-label="Abrir menú">☰</button>
   </div>
@@ -54,109 +54,223 @@
 
 <!-- HERO -->
 <header class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="pill"><i></i>Inteligencia artificial y automatización para pymes</span>
-      <h1>Delega lo repetitivo.<br>Recupera tu <span class="grad">tiempo</span>.</h1>
-      <p class="sub">Asistentes que atienden a tus clientes 24/7, automatizaciones que conectan tus herramientas y un ERP que trabaja por ti.
-        Para pymes de servicios que quieren crecer <b style="color:var(--fg)">sin contratar más</b>.</p>
-      <div class="ctas">
-        <a class="btn btn-p" href="#diagnostico">⚡ Diagnóstico gratuito</a>
-        <a class="btn btn-s" href="#calculadora">Calcula tus horas perdidas →</a>
-      </div>
-      <div class="trust"><span>Sin conocimientos técnicos</span><span>Resultados en semanas</span><span>RGPD y AI Act</span></div>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="wrap intro">
+    <a class="pill" href="#diagnostico">Diagnóstico gratuito por escrito en 48 h <b>→</b></a>
+    <h1 class="tx">Delega lo repetitivo. Recupera tu tiempo.</h1>
+    <p class="sub">Asistentes que atienden a tus clientes 24/7, automatizaciones que conectan tus herramientas y un ERP que trabaja por ti.
+      Para pymes de servicios que quieren crecer sin contratar más.</p>
+    <div class="ctas">
+      <a class="btn btn-s" href="#calculadora"><span class="play">▶</span>Calcula tus horas perdidas</a>
+      <a class="btn btn-p" href="#diagnostico">Pedir diagnóstico gratuito</a>
     </div>
+    <div class="trust"><span>Sin conocimientos técnicos</span><span>Resultados en semanas</span><span>RGPD y AI Act</span></div>
+  </div>
 
-    <div class="flow rv" aria-label="Ejemplo de automatización funcionando">
-      <div class="flow-head"><b>Nuevo cliente por WhatsApp</b><span class="live">En vivo</span></div>
-      <div class="step"><div class="ic">💬</div><div><b>Mensaje recibido a las 23:14</b><small>"Hola, ¿tenéis cita esta semana?"</small></div><span class="ok">✓</span></div>
-      <div class="step"><div class="ic">🧠</div><div><b>La IA entiende y responde</b><small>Consulta disponibilidad y precios</small></div><span class="ok">✓</span></div>
-      <div class="step"><div class="ic">📅</div><div><b>Cita agendada</b><small>Jueves 10:30 · confirmada al cliente</small></div><span class="ok">✓</span></div>
-      <div class="step"><div class="ic">🗂️</div><div><b>Ficha creada en el CRM</b><small>Con datos y origen del contacto</small></div><span class="ok">✓</span></div>
-      <div class="step"><div class="ic">🔔</div><div><b>Recordatorio programado</b><small>24 h antes, por WhatsApp</small></div><span class="ok">✓</span></div>
-      <div class="flow-foot"><span>Intervención humana: <b>0 min</b></span><span>Tiempo total: <b>9 segundos</b></span></div>
+  <div class="horizon" aria-hidden="true">
+    <div class="atmo"></div>
+    <div class="planet"></div>
+    <div class="logos-wrap">
+      <p>Conectamos las herramientas que ya usas</p>
+      <div class="marquee"><div class="track">
+        <span><svg viewBox="0 0 24 24"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/></svg>WhatsApp</span>
+        <span><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.5"/></svg>Odoo</span>
+        <span><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 6l9 7 9-7"/></svg>Gmail</span>
+        <span><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM9 4v16M5 12h14"/></svg>Holded</span>
+        <span><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M4 9h16M4 15h16M10 3v18"/></svg>Google Sheets</span>
+        <span><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M7.5 12h4l5-6M11.5 12l5 6"/></svg>n8n</span>
+        <span><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 6l9 7 9-7"/></svg>Outlook</span>
+        <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M8 12h8M12 8v8"/></svg>Sage</span>
+        <span><svg viewBox="0 0 24 24"><path d="M12 3l2.2 6.8H21l-5.5 4 2.1 6.7L12 16.4 6.4 20.5l2.1-6.7L3 9.8h6.8z"/></svg>Claude</span>
+        <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8.5"/></svg>HubSpot</span>
+        <span><svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/><rect x="3" y="3" width="18" height="18" rx="3"/></svg>Excel</span>
+        <span><svg viewBox="0 0 24 24"><path d="M5 19L12 5l7 14M8 14h8"/></svg>A3</span>
+      </div></div>
+    </div>
+  </div>
+
+  <!-- Maqueta del panel: se «levanta» al hacer scroll -->
+  <div class="wrap showcase">
+    <div class="panel" aria-label="Ejemplo de panel de un asistente funcionando">
+      <div class="panel-in">
+        <div class="side" aria-hidden="true">
+          <div class="brand"><img src="/assets/img/logo.png" alt="">Delegaia</div>
+          <span class="on"><i></i>Panel</span><span><i></i>Conversaciones</span><span><i></i>Citas</span><span><i></i>Automatizaciones</span><span><i></i>Informes</span>
+          <span class="sep">Conectado</span><span><i></i>WhatsApp</span><span><i></i>Odoo</span><span><i></i>Gmail</span>
+        </div>
+        <div class="main">
+          <div class="topbar"><div class="search">Buscar conversación, cliente o cita…</div><span class="ex">Datos de ejemplo</span></div>
+          <div class="kpis">
+            <div class="kpi"><small>Consultas atendidas</small><div><b data-count="312">312</b><svg viewBox="0 0 74 26"><path d="M0 22 L10 18 L20 20 L30 12 L40 15 L50 8 L60 10 L74 2"/></svg></div></div>
+            <div class="kpi"><small>Citas agendadas</small><div><b data-count="47">47</b><svg viewBox="0 0 74 26"><path d="M0 20 L12 21 L22 15 L32 17 L42 10 L54 12 L64 6 L74 4"/></svg></div></div>
+            <div class="kpi"><small>Horas recuperadas</small><div><b data-count="38" data-suf=" h">38 h</b><svg viewBox="0 0 74 26"><path d="M0 24 L10 20 L20 21 L30 16 L40 13 L50 14 L60 7 L74 5"/></svg></div></div>
+            <div class="kpi"><small>Respuesta media</small><div><b data-count="9" data-suf=" s">9 s</b><svg viewBox="0 0 74 26"><path d="M0 4 L12 8 L22 7 L32 12 L42 14 L52 17 L62 19 L74 21"/></svg></div></div>
+          </div>
+          <div class="cols">
+            <div class="box">
+              <h4>Nuevo cliente por WhatsApp</h4><p>Así trabaja un asistente, paso a paso</p>
+              <div class="flow">
+                <div class="step"><div class="ic">💬</div><div><b>Mensaje recibido a las 23:14</b><small>«Hola, ¿tenéis cita esta semana?»</small></div><span class="ok">✓</span></div>
+                <div class="step"><div class="ic">🧠</div><div><b>La IA entiende y responde</b><small>Consulta disponibilidad y precios</small></div><span class="ok">✓</span></div>
+                <div class="step"><div class="ic">📅</div><div><b>Cita agendada</b><small>Jueves 10:30 · confirmada al cliente</small></div><span class="ok">✓</span></div>
+                <div class="step"><div class="ic">🗂️</div><div><b>Ficha creada en el CRM</b><small>Con datos y origen del contacto</small></div><span class="ok">✓</span></div>
+                <div class="step"><div class="ic">🔔</div><div><b>Recordatorio programado</b><small>24 h antes, por WhatsApp</small></div><span class="ok">✓</span></div>
+              </div>
+            </div>
+            <div class="box">
+              <h4>Consultas resueltas por la IA</h4><p>Por mes · sin intervención humana</p>
+              <div class="chart" id="pchart" aria-hidden="true"></div>
+              <div class="months"><span>E</span><span>F</span><span>M</span><span>A</span><span>M</span><span>J</span><span>J</span><span>A</span><span>S</span><span>O</span><span>N</span><span>D</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </header>
 
 <!-- DOLORES -->
-<section style="padding-top:40px">
+<section style="padding-top:60px">
   <div class="wrap">
-    <p class="eyebrow">¿Te suena?</p>
-    <h2 class="rv">Tu equipo es bueno. El problema es <span class="grad">en qué gasta las horas</span>.</h2>
+    <span class="eyebrow">¿Te suena?</span>
+    <h2 class="rv tx">Tu equipo es bueno. El problema es en qué gasta las horas.</h2>
     <div class="pains">
-      <div class="pain rv"><div class="e">📨</div><p><b>Las mismas preguntas</b>, una y otra vez, por email, teléfono y WhatsApp.</p></div>
-      <div class="pain rv"><div class="e">📋</div><p><b>Copiar y pegar datos</b> del formulario al Excel, del Excel al CRM, del CRM a la factura.</p></div>
-      <div class="pain rv"><div class="e">⏳</div><p><b>Perseguir a clientes</b> para que manden documentos, firmen o confirmen la cita.</p></div>
-      <div class="pain rv"><div class="e">🌙</div><p><b>Clientes que escriben fuera de horario</b> y se van con quien sí les contesta.</p></div>
+      <div class="card rv"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/></svg></div><p><b>Las mismas preguntas</b>, una y otra vez, por email, teléfono y WhatsApp.</p></div>
+      <div class="card rv d1"><div class="ico"><svg viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg></div><p><b>Copiar y pegar datos</b> del formulario al Excel, del Excel al CRM, del CRM a la factura.</p></div>
+      <div class="card rv d2"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></svg></div><p><b>Perseguir a clientes</b> para que manden documentos, firmen o confirmen la cita.</p></div>
+      <div class="card rv d3"><div class="ico"><svg viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></div><p><b>Clientes que escriben fuera de horario</b> y se van con quien sí les contesta.</p></div>
     </div>
   </div>
 </section>
 
 <!-- SERVICIOS -->
 <section id="servicios">
+  <span id="marketing"></span>
   <div class="wrap">
-    <p class="eyebrow">Servicios</p>
-    <h2 class="rv">Soluciones concretas, <span class="grad">presupuesto cerrado</span>.</h2>
-    <p class="sub rv">Empezamos por lo que más horas te ahorra. Cada presupuesto se ajusta al tamaño de tu empresa y a lo que necesitas, sin facturas sorpresa.</p>
-    <div class="services">
-      <article class="svc star rv"><span class="tag">El más pedido</span><div class="e">💬</div><h3>Asistente 24/7</h3>
-        <p>Un chatbot en tu web y WhatsApp entrenado con la información de tu negocio.</p>
-        <ul><li>Responde, cualifica y agenda citas</li><li>Pasa a una persona cuando hace falta</li><li>Panel con todas las conversaciones</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
-      <article class="svc rv"><div class="e">⚙️</div><h3>Oficina automática</h3>
-        <p>De 3 a 5 automatizaciones que eliminan el trabajo administrativo repetitivo.</p>
-        <ul><li>Alta de clientes y documentación</li><li>Recordatorios y seguimientos</li><li>Facturas e informes automáticos</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
-      <article class="svc rv"><div class="e">🧠</div><h3>Copiloto de IA</h3>
-        <p>Una IA privada que conoce tus documentos, plantillas y procedimientos.</p>
-        <ul><li>Responde a tu equipo al momento</li><li>Redacta borradores con tu estilo</li><li>Tus datos no salen de tu control</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
-      <article class="svc rv"><div class="e">📊</div><h3>Tu ERP + IA</h3>
-        <p>Sacamos partido al ERP que ya usas (Odoo, Holded, Sage, A3 y otros) o te ayudamos a implantar uno.</p>
-        <ul><li>Lectura automática de facturas</li><li>Informes que se envían solos</li><li>Asistente que consulta tu ERP</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
-      <article class="svc rv"><div class="e">🌐</div><h3>Webs que venden</h3>
-        <p>Webs rápidas, optimizadas para Google y con tu asistente integrado.</p>
-        <ul><li>Diseño a medida y adaptado al móvil</li><li>SEO técnico desde el primer día</li><li>Captación de contactos automatizada</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
-      <article class="svc rv"><div class="e">🧩</div><h3>Apps y portales a medida</h3>
-        <p>Herramientas propias para tu empresa cuando el software estándar no llega.</p>
-        <ul><li>Portal de clientes y documentos</li><li>Paneles internos con tus datos</li><li>Prototipo antes de programar</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
+    <div class="center">
+      <span class="eyebrow">Servicios</span>
+      <h2 class="rv tx">Soluciones concretas, presupuesto cerrado.</h2>
+      <p class="sub rv">Empezamos por lo que más horas te ahorra. Cada presupuesto se ajusta al tamaño de tu empresa y a lo que necesitas, sin facturas sorpresa.</p>
+      <div class="tabs rv" role="tablist" aria-label="Tipo de servicio">
+        <span class="pillbg" aria-hidden="true"></span>
+        <button role="tab" id="t-ia" aria-controls="p-ia" aria-selected="true">IA y automatización</button>
+        <button role="tab" id="t-mk" aria-controls="p-mk" aria-selected="false" tabindex="-1">Marketing</button>
+      </div>
     </div>
-    <div class="extras rv">
-      <div class="extra"><b>¿Eres autónomo o un negocio pequeño?</b><span>Asistente Esencial para WhatsApp: responde a tus clientes, informa de tus servicios y agenda citas por ti. Ideal para barberías, peluquerías, estética, fisios y talleres.</span></div>
-      <div class="extra"><b>¿Prefieres empezar pequeño?</b><span>Automatización Express: <b>un flujo automático</b>, listo en una semana. Si después amplías, se descuenta.</span></div>
-      <div class="extra"><b>Pack Completo</b><span>Asistente 24/7 + Oficina Automática + web nueva, en un solo proyecto y con mejor precio que por separado.</span></div>
+
+    <div class="tabpanel show" id="p-ia" role="tabpanel" aria-labelledby="t-ia">
+      <div class="bento">
+        <article class="card w4 hasdemo">
+          <div>
+            <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 10h8M8 13h5"/></svg></div>
+            <h3>Asistente 24/7</h3>
+            <p>Un chatbot en tu web y WhatsApp entrenado con la información de tu negocio.</p>
+            <ul><li>Responde, cualifica y agenda citas</li><li>Pasa a una persona cuando hace falta</li><li>Panel con todas las conversaciones</li></ul>
+            <a class="ask" href="#diagnostico">Pedir presupuesto</a>
+          </div>
+          <div class="chat" id="chat" aria-label="Ejemplo de conversación con el asistente">
+            <span class="m t">Sábado · 22:47</span>
+            <span class="m u">Hola, ¿hacéis la renta? Soy autónomo.</span>
+            <span class="m a">¡Hola! Sí, preparamos la declaración de autónomos. ¿Te reservo una cita esta semana para revisar tus datos?</span>
+            <span class="m u">Vale, el jueves por la mañana.</span>
+            <span class="m a">Hecho: jueves a las 10:30. Te mando la lista de documentos y un recordatorio el día antes.</span>
+            <div class="typing"><i></i><i></i><i></i></div>
+          </div>
+        </article>
+        <article class="card beam">
+          <div class="cone"></div><div class="core"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></svg></div>
+          <h3>Copiloto de IA</h3>
+          <p>Una IA privada que conoce tus documentos, plantillas y procedimientos.</p>
+          <ul><li>Responde a tu equipo al momento</li><li>Redacta borradores con tu estilo</li><li>Tus datos no salen de tu control</li></ul>
+          <a class="ask" href="#diagnostico">Pedir presupuesto</a>
+        </article>
+        <article class="card w3">
+          <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></div>
+          <h3>Oficina automática</h3>
+          <p>De 3 a 5 automatizaciones que eliminan el trabajo administrativo repetitivo.</p>
+          <div class="tasks" id="tasks" aria-label="Ejemplo de tareas automáticas">
+            <div><i></i><span>Alta de clientes y documentación</span><em>auto</em></div>
+            <div><i></i><span>Recordatorios y seguimientos</span><em>auto</em></div>
+            <div><i></i><span>Facturas e informes automáticos</span><em>auto</em></div>
+          </div>
+          <a class="ask" href="#diagnostico">Pedir presupuesto</a>
+        </article>
+        <article class="card w3">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+          <h3>Tu ERP + IA</h3>
+          <p>Sacamos partido al ERP que ya usas (Odoo, Holded, Sage, A3 y otros) o te ayudamos a implantar uno.</p>
+          <ul><li>Lectura automática de facturas</li><li>Informes que se envían solos</li><li>Asistente que consulta tu ERP</li></ul>
+          <a class="ask" href="#diagnostico">Pedir presupuesto</a>
+        </article>
+        <article class="card w3">
+          <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg></div>
+          <h3>Webs que venden</h3>
+          <p>Webs rápidas, optimizadas para Google y con tu asistente integrado.</p>
+          <ul><li>Diseño a medida y adaptado al móvil</li><li>SEO técnico desde el primer día</li><li>Captación de contactos automatizada</li></ul>
+          <a class="ask" href="#diagnostico">Pedir presupuesto</a>
+        </article>
+        <article class="card w3">
+          <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M17.5 14v7M14 17.5h7"/></svg></div>
+          <h3>Apps y portales a medida</h3>
+          <p>Herramientas propias para tu empresa cuando el software estándar no llega.</p>
+          <ul><li>Portal de clientes y documentos</li><li>Paneles internos con tus datos</li><li>Prototipo antes de programar</li></ul>
+          <a class="ask" href="#diagnostico">Pedir presupuesto</a>
+        </article>
+      </div>
     </div>
-    <p class="note">Te enviamos el presupuesto por escrito y sin compromiso, con lo que incluye cada cuota: alojamiento, uso de la IA, mantenimiento y soporte.</p>
+
+    <div class="tabpanel" id="p-mk" role="tabpanel" aria-labelledby="t-mk" hidden>
+      <p class="sub center" style="margin:0 auto 34px">El mismo sistema de IA con el que creamos contenido, aplicado a tu marca. Tú apruebas en minutos; nosotros hacemos el resto.</p>
+      <div class="bento">
+        <article class="card w3"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div><h3>Marca personal en LinkedIn</h3>
+          <p>Contenido con tu voz para generar confianza y clientes.</p>
+          <ul><li>12 posts y 2 carruseles al mes</li><li>Perfil optimizado</li><li>Apruebas en 10 minutos a la semana</li></ul>
+          <a class="ask" href="#diagnostico">Pedir presupuesto</a></article>
+        <article class="card w3"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div><h3>Contenido SEO</h3>
+          <p>Que te encuentren en Google por lo que haces y dónde lo haces.</p>
+          <ul><li>4 artículos optimizados al mes</li><li>Mejoras técnicas de la web</li><li>Informe de posiciones</li></ul>
+          <a class="ask" href="#diagnostico">Pedir presupuesto</a></article>
+        <article class="card w3"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 6l9 7 9-7"/></svg></div><h3>Email marketing</h3>
+          <p>Mantén el contacto con tus clientes y convierte presupuestos en ventas.</p>
+          <ul><li>Newsletter mensual</li><li>Secuencia automática de seguimiento</li><li>Cumplimiento RGPD</li></ul>
+          <a class="ask" href="#diagnostico">Pedir presupuesto</a></article>
+        <article class="card w3"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div><h3>Prospección en LinkedIn</h3>
+          <p>Conversaciones con tu cliente ideal, con mensajes que envías tú desde tu perfil.</p>
+          <ul><li>100-150 empresas y decisores al mes</li><li>Mensajes personalizados uno a uno</li><li>Seguimiento y argumentario</li></ul>
+          <a class="ask" href="#diagnostico">Pedir presupuesto</a></article>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- MARKETING -->
-<section id="marketing" style="padding-top:20px">
+<!-- FORMAS DE EMPEZAR -->
+<section id="empezar" style="padding-top:40px">
   <div class="wrap">
-    <p class="eyebrow">Marketing</p>
-    <h2 class="rv">Marketing que trabaja <span class="grad">cada mes</span>.</h2>
-    <p class="sub rv">El mismo sistema de IA con el que creamos contenido, aplicado a tu marca. Tú apruebas en minutos; nosotros hacemos el resto.</p>
-    <div class="services mk">
-      <article class="svc rv"><div class="e">💼</div><h3>Marca personal en LinkedIn</h3>
-        <p>Contenido con tu voz para generar confianza y clientes.</p>
-        <ul><li>12 posts y 2 carruseles al mes</li><li>Perfil optimizado</li><li>Apruebas en 10 minutos a la semana</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
-      <article class="svc rv"><div class="e">🔎</div><h3>Contenido SEO</h3>
-        <p>Que te encuentren en Google por lo que haces y dónde lo haces.</p>
-        <ul><li>4 artículos optimizados al mes</li><li>Mejoras técnicas de la web</li><li>Informe de posiciones</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
-      <article class="svc rv"><div class="e">📬</div><h3>Email marketing</h3>
-        <p>Mantén el contacto con tus clientes y convierte presupuestos en ventas.</p>
-        <ul><li>Newsletter mensual</li><li>Secuencia automática de seguimiento</li><li>Cumplimiento RGPD</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
-      <article class="svc rv"><div class="e">🎯</div><h3>Prospección en LinkedIn</h3>
-        <p>Conversaciones con tu cliente ideal, con mensajes que envías tú desde tu perfil.</p>
-        <ul><li>100-150 empresas y decisores al mes</li><li>Mensajes personalizados uno a uno</li><li>Seguimiento y argumentario</li></ul>
-        <div class="price"><a class="ask" href="#diagnostico">Pedir presupuesto</a></div></article>
+    <div class="center">
+      <span class="eyebrow">Cómo empezar</span>
+      <h2 class="rv tx">Elige por dónde empezar.</h2>
+      <p class="sub rv">Te enviamos el presupuesto por escrito y sin compromiso, con lo que incluye cada cuota: alojamiento, uso de la IA, mantenimiento y soporte.</p>
+    </div>
+    <div class="plans">
+      <div class="card plan rv">
+        <span class="kind">Autónomos y negocios pequeños</span><h3>Asistente Esencial</h3>
+        <p>Tu asistente de WhatsApp: responde a tus clientes, informa de tus servicios y agenda citas por ti.</p>
+        <a class="btn btn-s" href="#diagnostico">Pedir presupuesto</a>
+        <ul><li>Responde a tus clientes por WhatsApp</li><li>Informa de tus servicios</li><li>Agenda citas por ti</li><li>Ideal para barberías, peluquerías, estética, fisios y talleres</li></ul>
+      </div>
+      <div class="card plan feat rv d1">
+        <span class="tag">Para empezar pequeño</span>
+        <span class="kind">Una sola tarea</span><h3>Automatización Express</h3>
+        <p>Un flujo automático, listo en una semana. Si después amplías, se descuenta.</p>
+        <a class="btn btn-p" href="#diagnostico">Pedir presupuesto</a>
+        <ul><li>Un flujo automático</li><li>Listo en una semana</li><li>Si después amplías, se descuenta</li><li>Presupuesto cerrado por escrito</li></ul>
+      </div>
+      <div class="card plan rv d2">
+        <span class="kind">Todo en un proyecto</span><h3>Pack Completo</h3>
+        <p>Asistente 24/7, Oficina Automática y web nueva, en un solo proyecto.</p>
+        <a class="btn btn-s" href="#diagnostico">Pedir presupuesto</a>
+        <ul><li>Asistente 24/7</li><li>Oficina Automática</li><li>Web nueva</li><li>Mejor precio que por separado</li></ul>
+      </div>
     </div>
   </div>
 </section>
@@ -165,12 +279,12 @@
 <section id="calculadora">
   <div class="wrap">
     <div class="center">
-      <p class="eyebrow">Calculadora</p>
-      <h2 class="rv">¿Cuánto te cuesta <span class="grad">no automatizar</span>?</h2>
+      <span class="eyebrow">Calculadora</span>
+      <h2 class="rv tx">¿Cuánto te cuesta no automatizar?</h2>
       <p class="sub rv">Mueve los controles. Es una estimación, pero suele quedarse corta.</p>
     </div>
     <div class="calc rv">
-      <div class="calc-in">
+      <div class="card">
         <div class="field"><label for="c-personas">Personas en tu equipo <output id="o-personas">5</output></label>
           <input type="range" id="c-personas" min="1" max="50" value="5"></div>
         <div class="field"><label for="c-horas">Horas por persona y semana en tareas repetitivas <output id="o-horas">6 h</output></label>
@@ -179,9 +293,11 @@
           <input type="range" id="c-coste" min="10" max="60" step="1" value="20"></div>
         <p class="note">Supuesto: se puede automatizar el 60 % de esas tareas (dato conservador según nuestra experiencia en proyectos de digitalización).</p>
       </div>
-      <div class="calc-out">
-        <div class="big"><span id="r-horas">0</span> h</div>
-        <div class="lbl">recuperables al mes en tu empresa</div>
+      <div class="card calc-out">
+        <div class="big"><span id="r-horas">0</span><small> h/mes</small></div>
+        <div class="lbl">recuperables en tu empresa</div>
+        <div class="chart" id="cchart" aria-hidden="true"></div>
+        <div class="months"><span>E</span><span>F</span><span>M</span><span>A</span><span>M</span><span>J</span><span>J</span><span>A</span><span>S</span><span>O</span><span>N</span><span>D</span></div>
         <div class="row">
           <div><b id="r-euros">0 €</b><span>al año en tiempo de tu equipo</span></div>
           <div><b id="r-dias">0</b><span>jornadas completas al mes</span></div>
@@ -196,13 +312,14 @@
 <!-- PROCESO -->
 <section id="proceso">
   <div class="wrap">
-    <p class="eyebrow">Cómo trabajamos</p>
-    <h2 class="rv">De tu primer mensaje a <span class="grad">funcionando</span> en semanas.</h2>
-    <div class="steps">
-      <div class="pstep rv"><h3>Cuéntanos tu caso</h3><p>Rellenas un formulario breve con tu situación y tu objetivo. Sin llamadas ni reuniones.</p><small>2 minutos · gratis</small></div>
-      <div class="pstep rv"><h3>Diagnóstico por escrito</h3><p>Analizamos la viabilidad y te enviamos qué automatizar primero, cuánto cuesta y cuántas horas te devuelve.</p><small>En 48 horas</small></div>
-      <div class="pstep rv"><h3>Implantación</h3><p>Lo construimos, lo probamos con tu equipo y lo dejamos funcionando.</p><small>2 a 4 semanas</small></div>
-      <div class="pstep rv"><h3>Medimos y mejoramos</h3><p>Revisamos resultados, ajustamos y te acompañamos para que siga rindiendo.</p><small>Soporte continuo</small></div>
+    <span class="eyebrow">Cómo trabajamos</span>
+    <h2 class="rv tx">De tu primer mensaje a funcionando en semanas.</h2>
+    <div class="steps" id="steps">
+      <div class="line" aria-hidden="true"><i></i></div>
+      <div class="card pstep rv"><span class="n">01</span><h3>Cuéntanos tu caso</h3><p>Rellenas un formulario breve con tu situación y tu objetivo. Sin llamadas ni reuniones.</p><small>2 minutos · gratis</small></div>
+      <div class="card pstep rv d1"><span class="n">02</span><h3>Diagnóstico por escrito</h3><p>Analizamos la viabilidad y te enviamos qué automatizar primero, cuánto cuesta y cuántas horas te devuelve.</p><small>En 48 horas</small></div>
+      <div class="card pstep rv d2"><span class="n">03</span><h3>Implantación</h3><p>Lo construimos, lo probamos con tu equipo y lo dejamos funcionando.</p><small>2 a 4 semanas</small></div>
+      <div class="card pstep rv d3"><span class="n">04</span><h3>Medimos y mejoramos</h3><p>Revisamos resultados, ajustamos y te acompañamos para que siga rindiendo.</p><small>Soporte continuo</small></div>
     </div>
   </div>
 </section>
@@ -211,8 +328,8 @@
 <section>
   <div class="wrap why">
     <div>
-      <p class="eyebrow">Por qué Delegaia</p>
-      <h2 class="rv">La IA solo funciona sobre <span class="grad">procesos ordenados</span>.</h2>
+      <span class="eyebrow">Por qué Delegaia</span>
+      <h2 class="rv tx">La IA solo funciona sobre procesos ordenados.</h2>
       <p class="sub rv">La mayoría de agencias te venden un chatbot. Nosotros empezamos por entender cómo trabaja tu empresa,
         porque venimos de implantar ERP y digitalizar pymes desde dentro.</p>
       <ul class="checks rv">
@@ -223,10 +340,10 @@
       </ul>
     </div>
     <div class="stats">
-      <div class="stat rv"><b class="grad">−30 %</b><span>tiempo de cierre financiero</span></div>
-      <div class="stat rv"><b class="grad">+20 %</b><span>productividad del equipo comercial</span></div>
-      <div class="stat rv"><b class="grad">95 %</b><span>adopción de la herramienta en menos de 2 meses</span></div>
-      <div class="stat rv"><b class="grad">24/7</b><span>atención a tus clientes, también en festivos</span></div>
+      <div class="card stat rv"><b data-count="30" data-pre="−" data-suf=" %">−30 %</b><span>tiempo de cierre financiero</span></div>
+      <div class="card stat rv d1"><b data-count="20" data-pre="+" data-suf=" %">+20 %</b><span>productividad del equipo comercial</span></div>
+      <div class="card stat rv d2"><b data-count="95" data-suf=" %">95 %</b><span>adopción de la herramienta en menos de 2 meses</span></div>
+      <div class="card stat rv d3"><b class="acc">24/7</b><span>atención a tus clientes, también en festivos</span></div>
       <p class="note" style="grid-column:1/-1">Resultados obtenidos por el fundador de Delegaia en proyectos de digitalización y ERP para pymes.</p>
     </div>
   </div>
@@ -235,15 +352,15 @@
 <!-- QUIÉNES SOMOS -->
 <section id="quienes-somos" style="padding-top:40px">
   <div class="wrap">
-    <p class="eyebrow">Quiénes somos</p>
-    <h2 class="rv">Una agencia de IA que empieza por <span class="grad">tu negocio</span>, no por la tecnología.</h2>
+    <span class="eyebrow">Quiénes somos</span>
+    <h2 class="rv tx">Una agencia de IA que empieza por tu negocio, no por la tecnología.</h2>
     <p class="sub rv">Delegaia ayuda a pymes de servicios a trabajar menos en lo repetitivo y más en lo que importa.
       Unimos experiencia en procesos de empresa, ERP y transformación digital con inteligencia artificial aplicada.</p>
     <div class="steps principles">
-      <div class="pstep rv"><h3>Primero el proceso</h3><p>Entendemos cómo trabaja tu equipo antes de proponer ninguna herramienta.</p></div>
-      <div class="pstep rv"><h3>Todo por escrito</h3><p>Diagnóstico, propuesta con precio cerrado y documentación de lo que entregamos. Sin letra pequeña.</p></div>
-      <div class="pstep rv"><h3>Resultados medibles</h3><p>Antes de empezar fijamos qué vamos a medir: horas, respuestas, citas, contactos.</p></div>
-      <div class="pstep rv"><h3>Seguridad y cumplimiento</h3><p>RGPD, aviso de IA según el AI Act y proveedores con garantías europeas.</p></div>
+      <div class="card pstep rv"><h3>Primero el proceso</h3><p>Entendemos cómo trabaja tu equipo antes de proponer ninguna herramienta.</p></div>
+      <div class="card pstep rv d1"><h3>Todo por escrito</h3><p>Diagnóstico, propuesta con precio cerrado y documentación de lo que entregamos. Sin letra pequeña.</p></div>
+      <div class="card pstep rv d2"><h3>Resultados medibles</h3><p>Antes de empezar fijamos qué vamos a medir: horas, respuestas, citas, contactos.</p></div>
+      <div class="card pstep rv d3"><h3>Seguridad y cumplimiento</h3><p>RGPD, aviso de IA según el AI Act y proveedores con garantías europeas.</p></div>
     </div>
     <p class="founder rv">Delegaia nace en Málaga de la mano de <a href="https://www.linkedin.com/in/alejandroduranmunoz" target="_blank" rel="noopener">Alejandro Durán</a>, con experiencia en implantación de ERP y transformación digital en pymes.</p>
   </div>
@@ -252,8 +369,8 @@
 <!-- FAQ -->
 <section id="faq">
   <div class="wrap">
-    <div class="center"><p class="eyebrow">Preguntas frecuentes</p><h2 class="rv">Lo que suelen preguntarnos</h2></div>
-    <div class="faq">
+    <div class="center"><span class="eyebrow">Preguntas frecuentes</span><h2 class="rv tx">Lo que suelen preguntarnos</h2></div>
+    <div class="faq rv">
       <details><summary>¿Necesito saber de tecnología?</summary><p>No. Tú nos cuentas cómo trabajas y nosotros nos encargamos de todo lo técnico. Te entregamos la solución funcionando y te enseñamos a usarla en una sesión.</p></details>
       <details><summary>¿Cuánto tarda en estar funcionando?</summary><p>Una automatización sencilla, en días. Un asistente 24/7 o un paquete de automatizaciones, entre 2 y 4 semanas. Te damos el calendario exacto en la propuesta.</p></details>
       <details><summary>¿Mis datos y los de mis clientes están seguros?</summary><p>Sí. Firmamos un contrato de encargado del tratamiento (RGPD), usamos proveedores con servidores en Europa siempre que es posible y solo accedemos a la información imprescindible.</p></details>
@@ -269,10 +386,10 @@
 <section id="diagnostico">
   <span id="contacto"></span>
   <div class="wrap">
-    <div class="final rv" style="text-align:left">
+    <div class="final rv">
       <div class="center">
-        <p class="eyebrow">Diagnóstico gratuito por escrito</p>
-        <h2>Cuéntanos tu caso. Te decimos qué <span class="grad">automatizar</span>.</h2>
+        <span class="eyebrow">Diagnóstico gratuito por escrito</span>
+        <h2 class="tx">Cuéntanos tu caso. Te decimos qué automatizar.</h2>
         <p class="sub">Describe tu situación y lo que quieres conseguir. En 48 horas laborables recibirás por email un diagnóstico
           con la viabilidad, las oportunidades que vemos y una inversión orientativa. Sin llamadas y sin compromiso.</p>
       </div>
@@ -329,7 +446,7 @@
 
 <footer>
   <div class="wrap">
-    <div><a class="logo" href="#" style="font-size:18px"><img src="/assets/img/logo.png" alt="" width="26" height="26"><span>delega<span class="grad">ia</span></span></a>
+    <div><a class="logo" href="#" style="font-size:18px"><img src="/assets/img/logo.png" alt="" width="26" height="26"><span>delegaia</span></a>
       <p style="margin-top:10px">IA y automatización para pymes · Málaga, España</p></div>
     <div class="fl">
       <a href="tel:+34611084604">+34 611 08 46 04</a>
@@ -338,6 +455,7 @@
     </div>
     <div class="fl"><a href="/legal.html">Aviso legal y privacidad</a><span>© <span id="year">2026</span> Delegaia</span></div>
   </div>
+  <div class="bigword" aria-hidden="true">delegaia</div>
 </footer>
 
 <a class="wa" href="https://wa.me/34611084604?text=Hola%20Alejandro%2C%20vengo%20de%20la%20web" target="_blank" rel="noopener" aria-label="Escríbeme por WhatsApp">
