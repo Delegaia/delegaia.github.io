@@ -27,9 +27,10 @@ h2 { font-size: clamp(32px, 4.6vw, 52px); max-width: 20ch }
 .tx { background: linear-gradient(180deg, #fff 30%, #9aa2b4); -webkit-background-clip: text; background-clip: text; color: transparent }
 .acc, .grad { color: var(--acc) }
 .sub { color: var(--mute); font-size: clamp(16px, 1.7vw, 18px); max-width: 58ch; margin-top: 18px }
-.eyebrow { display: inline-flex; align-items: center; gap: 8px; color: var(--mute); font-size: 13px; font-weight: 500;
-  border: 1px solid var(--line2); border-radius: 99px; padding: 5px 14px 5px 10px; margin-bottom: 22px; background: rgba(255,255,255,.02) }
-.eyebrow::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--acc); box-shadow: 0 0 10px var(--acc) }
+.eyebrow { display: inline-flex; align-items: center; gap: 12px; color: var(--acc); font-size: 12px; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase; margin-bottom: 20px }
+.eyebrow::before { content: ""; width: 28px; height: 1px; background: currentColor }
+.center .eyebrow::after { content: ""; width: 28px; height: 1px; background: currentColor }
 .note { color: var(--dim); font-size: 13px; margin-top: 16px }
 
 /* Botones planos, sin brillo */
@@ -63,10 +64,10 @@ nav .wrap { display: flex; align-items: center; justify-content: space-between; 
 .stars { position: absolute; inset: 0; z-index: -2; pointer-events: none }
 .stars i { position: absolute; width: 2px; height: 2px; border-radius: 50%; background: #fff; opacity: 0; animation: twinkle 5s infinite }
 @keyframes twinkle { 0%,100% { opacity: 0 } 50% { opacity: .55 } }
-.hero .pill { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,.04); border: 1px solid var(--line2);
-  border-radius: 99px; padding: 5px 6px 5px 16px; font-size: 13px; color: var(--fg); text-decoration: none; transition: border-color .2s }
-.hero .pill:hover { border-color: rgba(var(--acc-a), .5) }
-.hero .pill b { background: var(--acc); color: var(--acc-ink); border-radius: 99px; width: 26px; height: 20px; display: grid; place-items: center; font-size: 12px }
+.hero .pill { display: inline-flex; align-items: center; gap: 12px; color: var(--mute); font-size: 13px; font-weight: 500; letter-spacing: .02em;
+  text-decoration: none; padding-bottom: 4px; border-bottom: 1px solid rgba(var(--acc-a), .35); transition: color .2s, border-color .2s }
+.hero .pill:hover { color: var(--fg); border-color: var(--acc) }
+.hero .pill b { color: var(--acc); font-weight: 600; transition: transform .2s } .hero .pill:hover b { transform: translateX(4px) }
 .hero h1 { font-size: clamp(42px, 7.4vw, 84px); margin: 26px auto 0; max-width: 15ch; font-weight: 600 }
 .hero .sub { margin: 22px auto 0; max-width: 54ch }
 .ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 34px }

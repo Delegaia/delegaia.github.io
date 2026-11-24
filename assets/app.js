@@ -31,7 +31,7 @@ if (hz && hero && !reduce) {
   });
   hero.addEventListener('pointerleave', () => { tx = 50; tg = .55 });
   (function loop() {
-    cx += (tx - cx) * .07; cg += (tg - cg) * .07;
+    cx += (tx - cx) * .2; cg += (tg - cg) * .15;
     hz.style.setProperty('--mx', cx.toFixed(2) + '%'); hz.style.setProperty('--glow', cg.toFixed(3));
     requestAnimationFrame(loop);
   })();
