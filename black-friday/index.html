@@ -6,7 +6,7 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Black Friday: web para tu negocio en 7 días | Delegaia</title>
-<meta name="description" content="Black Friday en Delegaia: tu web de negocio por 414 € + IVA y tu asistente de WhatsApp por 174 € + IVA. Benalmádena, Málaga y Costa del Sol. Hasta el 1 de diciembre.">
+<meta name="description" content="Black Friday en Delegaia: tu web de negocio por 414 € + IVA y tu asistente de WhatsApp por 174 € + IVA. Hasta el 1 de diciembre.">
 <link rel="canonical" href="https://delegaia.es/black-friday/">
 <link rel="icon" href="/assets/img/logo.png">
 <link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
@@ -38,7 +38,8 @@
   .bf-word span { display: block }
   .bf-word .o { background: linear-gradient(180deg, rgba(var(--acc-a), .55), rgba(255,255,255,.06) 85%); -webkit-background-clip: text; background-clip: text; color: transparent }
   .bf-word .f { background: linear-gradient(180deg, #fff 35%, #8c94a8); -webkit-background-clip: text; background-clip: text; color: transparent }
-  .bf-hero .sub { margin: 30px auto 0; max-width: 52ch }
+  .bf-hook { font-size: clamp(24px, 3.2vw, 36px); font-weight: 600; letter-spacing: -.03em; line-height: 1.15; margin: 34px auto 0; color: var(--fg); text-wrap: balance }
+  .bf-hero .sub { margin: 14px auto 0; max-width: 52ch }
   .bf-hero .sub b { color: var(--fg); font-weight: 600 }
 
   /* Cuenta atrás */
@@ -120,8 +121,8 @@
   <div class="wrap intro">
     <span class="eyebrow">Hasta el 1 de diciembre</span>
     <h1 class="bf-word"><span class="o">Black</span><span class="f">Friday</span></h1>
-    <p class="sub">Este año no rebajamos nada al 70 %. Te traemos <b>dos ofertas para negocios</b> de Benalmádena, Málaga y la Costa del Sol:
-      tu web y tu asistente de WhatsApp. Se hacen una vez y quedan funcionando.</p>
+    <p class="bf-hook">Tu negocio, en Google antes de Navidad.</p>
+    <p class="sub">Web lista en 7 días por <b>414&nbsp;€&nbsp;+&nbsp;IVA</b>, o un asistente que contesta tu WhatsApp por <b>174&nbsp;€&nbsp;+&nbsp;IVA</b>. Hasta el 1 de diciembre.</p>
     <div>
       <div class="count" id="count" aria-live="polite">
         <div><b id="cd-d">0</b><small>días</small></div><div><b id="cd-h">00</b><small>horas</small></div>
@@ -134,8 +135,8 @@
 </header>
 
 <div class="tape-wrap" aria-hidden="true"><div class="tape"><div class="track">
-  <span>Black Friday Delegaia</span><span>Tu web en 7 días</span><span>Asistente de WhatsApp</span><span>Para negocios de la Costa del Sol</span><span>Hasta el 1 de diciembre</span>
-  <span>Black Friday Delegaia</span><span>Tu web en 7 días</span><span>Asistente de WhatsApp</span><span>Para negocios de la Costa del Sol</span><span>Hasta el 1 de diciembre</span>
+  <span>Black Friday Delegaia</span><span>Tu web en 7 días</span><span>Asistente de WhatsApp</span><span>En Google antes de Navidad</span><span>Hasta el 1 de diciembre</span>
+  <span>Black Friday Delegaia</span><span>Tu web en 7 días</span><span>Asistente de WhatsApp</span><span>En Google antes de Navidad</span><span>Hasta el 1 de diciembre</span>
 </div></div></div>
 
 <!-- OFERTAS -->
@@ -247,7 +248,7 @@
             <option>Web para tu negocio (414 € + IVA)</option>
             <option>Asistente de WhatsApp (174 € + IVA)</option>
             <option>Las dos</option></select></label>
-          <label>¿Dónde está tu negocio? *<input name="Zona" required placeholder="Ej.: Benalmádena, Arroyo de la Miel"></label>
+          <label>¿Dónde está tu negocio? *<input name="Zona" required placeholder="Ej.: ciudad y provincia"></label>
         </div>
         <label>¿A qué te dedicas y qué necesitas? *
           <textarea name="Situacion" rows="4" required placeholder="Ej.: tengo una peluquería, no tengo web y muchas clientas me preguntan precios y horarios por WhatsApp…"></textarea></label>
