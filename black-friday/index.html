@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com mailto:; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Friday: web para tu negocio en 7 días | Delegaia</title>
+<meta name="description" content="Black Friday en Delegaia: 3 plazas de precio de fundador para webs de negocio y 2 para el asistente de WhatsApp. Málaga, Benalmádena y Costa del Sol. Hasta el 1 de diciembre.">
+<link rel="canonical" href="https://delegaia.es/black-friday/">
+<link rel="icon" href="/assets/img/logo.png">
+<link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Delegaia">
+<meta property="og:url" content="https://delegaia.es/black-friday/">
+<meta property="og:title" content="Black Friday Delegaia · 3 webs a precio de fundador">
+<meta property="og:description" content="Tu web lista en 7 días, con textos escritos por nosotros y preparada para Google. Solo 3 plazas, hasta el 1 de diciembre.">
+<meta property="og:image" content="https://delegaia.es/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Offer","name":"Web de una página para negocios · precio de fundador Black Friday",
+"price":"414","priceCurrency":"EUR","priceValidUntil":"2026-12-01","availability":"https://schema.org/LimitedAvailability",
+"url":"https://delegaia.es/black-friday/","seller":{"@type":"ProfessionalService","name":"Delegaia","url":"https://delegaia.es"}}
+</script>
+<style>
+  /* ===== Black Friday: negro puro, tipografía enorme y la luz turquesa de la marca ===== */
+  body { background: #000 }
+  .bf-hero { position: relative; padding: 150px 0 90px; overflow: hidden; isolation: isolate; text-align: center }
+  .bf-hero::before { content: ""; position: absolute; left: 50%; top: -260px; width: 1100px; height: 640px; transform: translateX(-50%); z-index: -1; border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(var(--acc-a), .30), rgba(var(--acc-a), .06) 60%, transparent) }
+  .bf-hero::after { content: ""; position: absolute; inset: 0; z-index: -2; opacity: .45;
+    background: repeating-linear-gradient(90deg, rgba(255,255,255,.03) 0 1px, transparent 1px 64px);
+    -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 20%, #000 30%, transparent 75%); mask-image: radial-gradient(ellipse 70% 70% at 50% 20%, #000 30%, transparent 75%) }
+  .bf-word { font-size: clamp(64px, 15vw, 210px); font-weight: 800; letter-spacing: -.065em; line-height: .82; text-transform: uppercase; margin-top: 18px }
+  .bf-word span { display: block }
+  .bf-word .o { background: linear-gradient(180deg, rgba(var(--acc-a), .55), rgba(255,255,255,.06) 85%); -webkit-background-clip: text; background-clip: text; color: transparent }
+  .bf-word .f { background: linear-gradient(180deg, #fff 35%, #8c94a8); -webkit-background-clip: text; background-clip: text; color: transparent }
+  .bf-hero .sub { margin: 30px auto 0; max-width: 52ch }
+  .bf-hero .sub b { color: var(--fg); font-weight: 600 }
+
+  /* Cuenta atrás */
+  .count { display: inline-flex; gap: 10px; margin-top: 34px }
+  .count div { min-width: 78px; padding: 12px 10px 10px; border: 1px solid var(--line2); border-radius: 14px; background: rgba(255,255,255,.03) }
+  .count b { display: block; font-size: 34px; font-weight: 600; letter-spacing: -.04em; line-height: 1; font-variant-numeric: tabular-nums }
+  .count small { display: block; margin-top: 6px; font-size: 11px; color: var(--dim); text-transform: uppercase; letter-spacing: .12em }
+  .count-lbl { color: var(--mute); font-size: 13px; margin-top: 14px }
+  .closed { display: none; margin-top: 30px; color: var(--fg); font-weight: 600 }
+  body.is-closed .count, body.is-closed .count-lbl { display: none } body.is-closed .closed { display: block }
+
+  /* Cinta de texto */
+  .tape-wrap { overflow: hidden; padding: 18px 0 }
+  .tape { border-block: 1px solid var(--line2); background: var(--acc); color: var(--acc-ink); overflow: hidden; transform: rotate(-1.2deg) scaleX(1.03) }
+  .tape .track { display: flex; gap: 34px; width: max-content; padding: 12px 0; animation: scroll 30s linear infinite; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; font-size: 14px; white-space: nowrap }
+  .tape .track span::after { content: "✦"; margin-left: 34px }
+
+  /* Ofertas tipo entrada (ticket) */
+  .offers { display: grid; grid-template-columns: 1.25fr 1fr; gap: 18px; margin-top: 50px; align-items: start }
+  .ticket { padding: 34px; border-radius: 24px }
+  .ticket.main { border-color: rgba(var(--acc-a), .45); background: linear-gradient(180deg, #0b1719, #07090d 60%); box-shadow: 0 -10px 70px -25px rgba(var(--acc-a), .5) }
+  .ticket .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap }
+  .seats { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: var(--fg) }
+  .seats i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; background: var(--acc); box-shadow: 0 0 10px rgba(var(--acc-a), .7) }
+  .ticket .lbl { color: var(--acc); font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase }
+  .ticket h2 { font-size: clamp(30px, 3.6vw, 42px); margin-top: 16px; max-width: none }
+  .ticket > p { color: var(--mute); margin-top: 10px; font-size: 15.5px }
+  .price { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-top: 26px; padding-top: 24px; border-top: 1px dashed var(--line2) }
+  .price b { font-size: clamp(48px, 6vw, 68px); font-weight: 700; letter-spacing: -.05em; line-height: 1; font-variant-numeric: tabular-nums }
+  .price span { color: var(--mute); font-size: 15px }
+  .price small { flex-basis: 100%; color: var(--dim); font-size: 13px }
+  .ticket .btn { margin-top: 24px; width: 100%; justify-content: center }
+  .ticket ul { list-style: none; margin-top: 26px; display: grid; gap: 11px; font-size: 14.5px }
+  .ticket li { display: flex; gap: 10px; align-items: flex-start; color: var(--fg) }
+  .ticket li::before { content: "✓"; flex: none; width: 18px; height: 18px; border-radius: 5px; background: var(--acc); color: var(--acc-ink); font-size: 11px; font-weight: 800; display: grid; place-items: center; margin-top: 2px }
+  .ticket .no { margin-top: 18px; font-size: 13px; color: var(--dim) }
+  .ticket .no b { color: var(--mute); font-weight: 600 }
+
+  /* Ejemplo real */
+  .example { display: grid; grid-template-columns: 1fr 1.3fr; gap: 50px; align-items: center }
+  .browser { border-radius: 16px; overflow: hidden; border: 1px solid var(--line2); background: var(--bg2); box-shadow: 0 30px 90px rgba(0,0,0,.6), 0 0 0 8px rgba(255,255,255,.02);
+    transform: perspective(1400px) rotateY(-8deg) rotateX(3deg); transition: transform .6s var(--ease) }
+  .browser:hover { transform: none }
+  .browser .bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; border-bottom: 1px solid var(--line) }
+  .browser .bar i { width: 9px; height: 9px; border-radius: 50%; background: rgba(255,255,255,.14) }
+  .browser .bar span { margin-left: 10px; font-size: 12px; color: var(--dim) }
+  .browser img { width: 100%; height: auto }
+  .example .btn { margin-top: 26px }
+
+  /* Cómo funciona */
+  .how { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 46px }
+  .how .card .n { font-size: 13px; color: var(--acc); font-weight: 600; font-variant-numeric: tabular-nums }
+  .how .card h3 { margin-top: 12px }
+
+  .terms { max-width: 800px; margin: 40px auto 0; color: var(--dim); font-size: 13px; display: grid; gap: 8px }
+  .terms b { color: var(--mute) }
+
+  @media (max-width: 900px) { .offers, .example { grid-template-columns: 1fr } .how { grid-template-columns: 1fr 1fr } .browser { transform: none } }
+  @media (max-width: 560px) { .how { grid-template-columns: 1fr } .count div { min-width: 64px } .count b { font-size: 26px } .ticket { padding: 24px } .bf-hero { padding-top: 120px } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="/"><img src="/assets/img/logo.png" alt="" width="30" height="30"><span>delegaia</span></a>
+    <div class="links">
+      <a href="#ofertas">Ofertas</a>
+      <a href="#ejemplo">Ejemplo real</a>
+      <a href="#como">Cómo funciona</a>
+      <a href="/">Volver a la web</a>
+      <a class="btn btn-p btn-sm" href="#reservar">Reservar plaza</a>
+    </div>
+    <button class="burger" aria-label="Abrir menú">☰</button>
+  </div>
+</nav>
+
+<header class="bf-hero">
+  <div class="wrap intro">
+    <span class="eyebrow">Hasta el 1 de diciembre</span>
+    <h1 class="bf-word"><span class="o">Black</span><span class="f">Friday</span></h1>
+    <p class="sub">Este año no rebajamos nada al 70 %. Abrimos <b>5 plazas de precio de fundador</b> para negocios de Benalmádena, Málaga y la Costa del Sol:
+      3 webs y 2 asistentes de WhatsApp. Se hacen una vez y quedan funcionando.</p>
+    <div>
+      <div class="count" id="count" aria-live="polite">
+        <div><b id="cd-d">0</b><small>días</small></div><div><b id="cd-h">00</b><small>horas</small></div>
+        <div><b id="cd-m">00</b><small>min</small></div><div><b id="cd-s">00</b><small>seg</small></div>
+      </div>
+      <p class="count-lbl">Hasta el martes 1 de diciembre a las 23:59 o hasta que se ocupen las plazas</p>
+      <p class="closed">La oferta de Black Friday ha terminado. Puedes pedirnos presupuesto igualmente.</p>
+    </div>
+  </div>
+</header>
+
+<div class="tape-wrap" aria-hidden="true"><div class="tape"><div class="track">
+  <span>Black Friday Delegaia</span><span>Tu web en 7 días</span><span>Solo 5 plazas</span><span>Sin llamadas: todo por escrito</span><span>Hasta el 1 de diciembre</span>
+  <span>Black Friday Delegaia</span><span>Tu web en 7 días</span><span>Solo 5 plazas</span><span>Sin llamadas: todo por escrito</span><span>Hasta el 1 de diciembre</span>
+</div></div></div>
+
+<!-- OFERTAS -->
+<section id="ofertas">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Las ofertas</span>
+      <h2 class="rv tx">Pagas una vez. Queda funcionando.</h2>
+      <p class="sub rv">El precio de fundador es para nuestros primeros clientes. A cambio solo te pedimos tu opinión por escrito y permiso para enseñar el resultado.</p>
+    </div>
+    <div class="offers">
+      <article class="card ticket main rv">
+        <div class="top"><span class="lbl">Tu web en 7 días</span><span class="seats"><i></i><i></i><i></i>3 plazas</span></div>
+        <h2 class="tx">Web para tu negocio</h2>
+        <p>Una página completa, diseñada a medida para tu negocio, que te encuentren en Google y te escriban por WhatsApp.</p>
+        <div class="price"><b>414 €</b><span>+ IVA · pago único</span><small>500,94 € con IVA incluido. Mantenimiento opcional: 49 € + IVA al mes.</small></div>
+        <a class="btn btn-p" href="#reservar" data-oferta="Web para tu negocio (414 € + IVA)">Reservar mi web</a>
+        <ul>
+          <li>Diseño a medida y pensado para el móvil</li>
+          <li>Los textos los escribimos nosotros: tú nos cuentas qué haces</li>
+          <li>Preparada para Google: estudio de palabras clave, velocidad y alta en Google</li>
+          <li>Formulario que llega a tu correo y botón de WhatsApp</li>
+          <li>Aviso legal y privacidad, sin banner de cookies</li>
+          <li>Una ronda de cambios y 30 días de ajustes sin coste</li>
+          <li>Lista en 5-7 días laborables desde que nos mandas logo y fotos</li>
+        </ul>
+        <p class="no"><b>No incluye:</b> fotografía profesional, tienda online, blog ni más páginas. El dominio (unos 10-15 € al año) lo contratas tú y te guiamos paso a paso.</p>
+      </article>
+
+      <article class="card ticket rv d1">
+        <div class="top"><span class="lbl">Tu WhatsApp contesta solo</span><span class="seats"><i></i><i></i>2 plazas</span></div>
+        <h2 class="tx">Asistente de WhatsApp</h2>
+        <p>Responde a tus clientes, informa de tus servicios y agenda citas por ti, también de noche y en festivos.</p>
+        <div class="price"><b>174 €</b><span>+ IVA · puesta en marcha</span><small>210,54 € con IVA. Después, 59 € + IVA al mes (71,39 € con IVA) con 6 meses de permanencia.</small></div>
+        <a class="btn btn-s" href="#reservar" data-oferta="Asistente de WhatsApp (174 € + IVA)">Reservar mi asistente</a>
+        <ul>
+          <li>En tu WhatsApp de empresa, por la vía oficial de Meta</li>
+          <li>Reserva, cambia y cancela citas con tu disponibilidad real</li>
+          <li>Recordatorio al cliente el día anterior</li>
+          <li>Te avisa de cada cita y te pasa la conversación cuando hace falta</li>
+          <li>Avisa de que es una IA, como exige la ley</li>
+          <li>Cuota con IA, WhatsApp (hasta 300 conversaciones al mes), servidor y soporte</li>
+          <li>Funcionando en 2-3 semanas</li>
+        </ul>
+        <p class="no"><b>Ideal para:</b> peluquerías, barberías, estética, fisios, talleres y negocios con cita.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EJEMPLO -->
+<section id="ejemplo" style="padding-top:30px">
+  <div class="wrap example">
+    <div>
+      <span class="eyebrow">Ejemplo real</span>
+      <h2 class="rv tx">Así trabajamos.</h2>
+      <p class="sub rv">Web de la Dra. Julia Seoane, médica estética con consultas en la Costa del Sol y Melilla. Diseño a medida, textos propios
+        y preparada para Google. Tu web será distinta, pensada para tu negocio, con el mismo cuidado.</p>
+      <a class="btn btn-s rv" href="/drajuliaseoane/" target="_blank" rel="noopener">Ver la web completa →</a>
+    </div>
+    <div class="browser rv d1">
+      <div class="bar"><i></i><i></i><i></i><span>Dra. Julia Seoane · Medicina estética</span></div>
+      <img src="/assets/img/ejemplo-julia.webp" alt="Portada de la web de la Dra. Julia Seoane hecha por Delegaia" width="1280" height="800" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section id="como">
+  <div class="wrap">
+    <span class="eyebrow">Cómo funciona</span>
+    <h2 class="rv tx">Sin llamadas ni reuniones. Todo por escrito.</h2>
+    <div class="how">
+      <div class="card rv"><span class="n">01</span><h3>Reservas tu plaza</h3><p>Rellenas el formulario de abajo en 2 minutos. No pagas nada todavía.</p></div>
+      <div class="card rv d1"><span class="n">02</span><h3>Te enviamos la propuesta</h3><p>En 48 horas laborables, por email: qué haremos, plazo y precio cerrado.</p></div>
+      <div class="card rv d2"><span class="n">03</span><h3>Aceptas y nos mandas tu info</h3><p>Logo, fotos y lo que haces. Las plazas se asignan por orden de aceptación.</p></div>
+      <div class="card rv d3"><span class="n">04</span><h3>Listo y funcionando</h3><p>Lo revisas, ajustamos lo que haga falta y es tuyo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVAR -->
+<section id="reservar">
+  <span id="contacto"></span>
+  <div class="wrap">
+    <div class="final rv">
+      <div class="center">
+        <span class="eyebrow">Reserva tu plaza</span>
+        <h2 class="tx">Cuéntanos tu negocio.</h2>
+        <p class="sub">Reservar no te compromete a nada. Te respondemos por email en 48 horas laborables con la propuesta. Sin llamadas.</p>
+      </div>
+      <form class="dform" id="dform" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="04c33da1-eca1-499c-a996-28546691beab">
+        <input type="hidden" name="subject" value="Black Friday · reserva de plaza · Delegaia">
+        <input type="hidden" name="from_name" value="Web Delegaia · Black Friday">
+        <input type="hidden" name="redirect" value="https://delegaia.es/gracias.html">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="frow">
+          <label>Nombre *<input name="Nombre" required autocomplete="name"></label>
+          <label>Nombre del negocio *<input name="Empresa" required autocomplete="organization"></label>
+        </div>
+        <div class="frow">
+          <label>Email *<input type="email" name="email" required autocomplete="email"></label>
+          <label>Teléfono (opcional)<input type="tel" name="Telefono" autocomplete="tel"></label>
+        </div>
+        <div class="frow">
+          <label>¿Qué quieres reservar? *<select name="Oferta" id="oferta" required>
+            <option value="">Elige uno</option>
+            <option>Web para tu negocio (414 € + IVA)</option>
+            <option>Asistente de WhatsApp (174 € + IVA)</option>
+            <option>Las dos</option></select></label>
+          <label>¿Dónde está tu negocio? *<input name="Zona" required placeholder="Ej.: Benalmádena, Arroyo de la Miel"></label>
+        </div>
+        <label>¿A qué te dedicas y qué necesitas? *
+          <textarea name="Situacion" rows="4" required placeholder="Ej.: tengo una peluquería, no tengo web y muchas clientas me preguntan precios y horarios por WhatsApp…"></textarea></label>
+        <label>¿Tienes ya web o redes sociales? (opcional)<input name="Herramientas" placeholder="Ej.: solo Instagram, @mipeluqueria"></label>
+        <label class="chk"><input type="checkbox" required> He leído la <a href="/legal.html" target="_blank">política de privacidad</a> y acepto que Delegaia use estos datos para responder a mi solicitud.</label>
+        <button class="btn btn-p" type="submit" id="dsend">Reservar mi plaza →</button>
+        <div id="dfail" class="dfail" hidden>
+          <b>No hemos podido enviar el formulario por un problema técnico.</b>
+          <span>No pierdas lo escrito: envíalo a <b>alejandro@delegaia.es</b> desde tu correo. Te dejamos el texto preparado.</span>
+          <textarea id="dtext" rows="6" readonly></textarea>
+          <div class="dfail-btns">
+            <button type="button" class="btn btn-s" id="dcopy">📋 Copiar texto</button>
+            <a class="btn btn-s" id="dgmail" href="#" target="_blank" rel="noopener">Abrir en Gmail</a>
+            <a class="btn btn-s" id="dmail" href="mailto:alejandro@delegaia.es">✉ Abrir mi correo</a>
+          </div>
+          <small id="derr" class="note"></small>
+        </div>
+        <p class="note">¿Prefieres escribir directamente? <a href="mailto:alejandro@delegaia.es">alejandro@delegaia.es</a> o por WhatsApp con el botón de abajo.</p>
+      </form>
+    </div>
+    <div class="terms">
+      <p><b>Condiciones de la oferta.</b> Válida del 25 de noviembre al 1 de diciembre de 2026 (23:59) o hasta ocupar las plazas: 3 webs y 2 asistentes. Las plazas se asignan por orden de aceptación de la propuesta.
+        El precio de fundador se aplica a la puesta en marcha; las cuotas mensuales no tienen descuento. A cambio, el cliente nos da su opinión por escrito y permiso para enseñar el resultado.
+        La web se entrega en 5-7 días laborables y el asistente en 2-3 semanas, contados desde que recibimos la información del negocio. Junto a cada propuesta enviamos las condiciones generales del servicio.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><a class="logo" href="/" style="font-size:18px"><img src="/assets/img/logo.png" alt="" width="26" height="26"><span>delegaia</span></a>
+      <p style="margin-top:10px">IA, webs y automatización para negocios · Málaga, España</p></div>
+    <div class="fl">
+      <a href="mailto:alejandro@delegaia.es">alejandro@delegaia.es</a>
+      <a href="tel:+34611084604">+34 611 08 46 04</a>
+    </div>
+    <div class="fl"><a href="/legal.html">Aviso legal y privacidad</a><span>© <span id="year">2026</span> Delegaia</span></div>
+  </div>
+  <div class="bigword" aria-hidden="true">delegaia</div>
+</footer>
+
+<a class="wa" href="https://wa.me/34611084604?text=Hola%2C%20vengo%20por%20la%20oferta%20de%20Black%20Friday" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.8.4 3.6 3.6 0 0 0-1.1 2.6 6.2 6.2 0 0 0 1.3 3.3 14 14 0 0 0 5.4 4.8c2 .9 2.8.9 3.8.8.6-.1 1.8-.8 2-1.5s.3-1.3.2-1.5-.2-.2-.5-.4zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zm8.4-18.2A11.8 11.8 0 0 0 1.8 17.9L.2 23.8l6-1.6a11.8 11.8 0 0 0 5.7 1.5A11.8 11.8 0 0 0 20.4 3.6z"/></svg>
+</a>
+
+<script src="/assets/app.js" defer></script>
+<script src="/assets/bf.js" defer></script>
+</body>
+</html>

@@ -201,7 +201,7 @@ if (form) form.addEventListener('submit', async e => {
     if (!r.ok || j.success === false) throw new Error(j.message || ('HTTP ' + r.status));
     location.href = '/gracias.html';
   } catch (err) {
-    const campos = [['Nombre', 'Nombre'], ['Empresa', 'Empresa'], ['Email', 'email'], ['Teléfono', 'Telefono'], ['Sector', 'Sector'], ['Tamaño', 'Tamano'],
+    const campos = [['Nombre', 'Nombre'], ['Empresa', 'Empresa'], ['Email', 'email'], ['Teléfono', 'Telefono'], ['Oferta', 'Oferta'], ['Zona', 'Zona'], ['Sector', 'Sector'], ['Tamaño', 'Tamano'],
       ['Situación', 'Situacion'], ['Objetivo', 'Objetivo'], ['Herramientas', 'Herramientas'], ['Urgencia', 'Urgencia']];
     const cuerpo = campos.map(([l, k]) => `${l}: ${data[k] || '-'}`).join('\n');
     const asunto = 'Diagnóstico gratuito · ' + (data.Empresa || '');
